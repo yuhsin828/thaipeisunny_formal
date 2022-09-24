@@ -1,0 +1,266 @@
+::selection {
+    color: white;
+    background: black;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #333333;
+}
+
+.notoSerif {
+    font-family: 'Noto Serif TC', serif;
+}
+
+.listStyleNone {
+    list-style-type: none;
+}
+
+/*---------------- navigation ----------------*/
+/* nav .navbar-brand .img-fluid {
+    max-width: 250px;
+} */
+
+nav .text_dark:visited {
+    color: #333333;
+}
+
+nav .text_dark:hover {
+    color: #e36600;
+    transition: all 0.4s;
+}
+
+nav ul .active {
+    color: #FA760A !important;
+}
+
+nav ul .active:hover {
+    color: #e36600 !important;
+    transition: all 0.4s !important;
+}
+
+@media screen and (min-width:768px) {
+    .w_150 {
+        width: 150px;
+    }
+}
+
+/*---------------- goTop button ----------------*/
+.top_btn {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    background-color: #F8DE76;
+    border: 0;
+    border-radius: 50%;
+}
+
+/*---------------- breadcrumb ----------------*/
+.breadcrumb-item a:hover {
+    color: #666666;
+    transition: all 0.4s;
+}
+
+/*---------------- main menu ----------------*/
+.ic_ctrl {
+    height: 100px;
+}
+
+.menu_ic_pos {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
+
+/*---------------- footer ----------------*/
+footer li .text_light:visited {
+    color: #FFFEF9;
+}
+
+footer li .text_light:hover {
+    color: #F8DE76;
+    transition: all 0.4s;
+}
+
+/*---------------- background color ----------------*/
+.bg_white {
+    background-color: #FEFEFE;
+}
+
+.bg_light {
+    background-color: #FFFEF9;
+}
+
+.bg_dark {
+    background-color: #333333;
+}
+
+.bg_lemonYellow {
+    background-color: #FFF38A;
+}
+
+.bg_lightYellow {
+    background-color: #FFF9E1;
+}
+
+.bg_beachBlue {
+    background-color: #ACE6FF;
+}
+
+.bg_pink {
+    background-color: #FF7BDA;
+}
+
+.bg_lightPink {
+    background-color: #FFE5F4;
+}
+
+.bg_green {
+    background-color: #A7F642;
+}
+
+.bg_lightGreen {
+    background-color: #DBFFBF;
+}
+
+.bg_blue {
+    background-color: #62E9EF;
+}
+
+.bg_lightBlue {
+    background-color: #CFFDFF;
+}
+
+.bg_orange {
+    background-color: #FC987A;
+}
+
+.bg_lightOrange {
+    background-color: #FCE9DB;
+}
+
+/*---------------- text color ----------------*/
+.text_light {
+    color: #FFFEF9;
+}
+
+.text_dark {
+    color: #333333;
+}
+
+.text_orange {
+    color: #FA760A;
+}
+
+/*---------------- other styles ----------------*/
+.round_1 {
+    border-radius: 1rem;
+}
+
+.round_50 {
+    border-radius: 50%;
+}
+
+.box_shadow_4 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box_shadow_2 {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.box_shadow_4:hover,
+.box_shadow_2:hover {
+    box-shadow: none;
+    transition: all 0.4s;
+}
+
+.overflow_dot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.overflow_lines_dot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.btn_disable {
+    background-color: #dddddd;
+}
+
+.pointer_none {
+    pointer-events: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/*---------------- about page ----------------*/
+article .text_dark:visited {
+    color: #333333;
+}
+
+article .text_dark:hover {
+    color: #e36600;
+    transition: all 0.4s;
+}
+
+aside .text_dark:visited {
+    color: #333333;
+}
+
+aside .text_dark:hover {
+    background-color: #FFF38A;
+    color: #333333;
+    transition: all 0.4s;
+}
+
+/*---------------- textbook page ----------------*/
+.player_pos {
+    position: fixed;
+    bottom: 6rem;
+    right: -60%;
+    /* transform: translateX(80%); */
+    z-index: 998;
+}
+
+.player_pos:hover {
+    right: 0;
+    z-index: 1000;
+    transition: all 0.4s;
+}
+
+@media screen and (min-width:425px) {
+    .player_pos {
+        right: -40%;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .player_pos {
+        right: -30%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .player_pos {
+        right: -20%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .player_pos {
+        right: -10%;
+    }
+}

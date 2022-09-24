@@ -19,28 +19,28 @@ class Home extends CI_Controller
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
+
     public function index()
     {
         $data['page'] = "home";
         $this->load->view('home/home.php', $data);
     }
 
-    public function contact()
-    {
-        $data['page'] = "home";
-        $this->load->view('home/contact.php', $data);
-    }
+    // public function guide()
+    // {
+    //     $data['page'] = "home";
+    //     $this->load->view('home/guide.php', $data);
+    // }
 
-    public function copyright()
-    {
-        $data['page'] = "home";
-        $this->load->view('home/copyright.php', $data);
-    }
+    // public function copyright()
+    // {
+    //     $data['page'] = "home";
+    //     $this->load->view('home/copyright.php', $data);
+    // }
 
-    public function sitemap()
-    {
-        $data['page'] = "home";
-        $this->load->view('home/sitemap.php', $data);
-    }
-
+    // public function about()
+    // {
+    //     $data['page'] = "home";
+    //     $this->load->view('home/about.php', $data);
+    // }
 }

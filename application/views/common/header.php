@@ -1,88 +1,55 @@
-  <head>
-    <title>國北小泰陽 學習資源網</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="國北小泰陽 學習資源網">
-    <meta name="keywords" content="國北小泰陽,華語教學,泰北華語, 泰北小學, 泰北幼幼班,泰北讀本, 華語讀本, 國北教, 傳愛到泰北,學習資源網  ">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="國北小泰陽 學習資源網">
+  <meta name="keywords" content="國北小泰陽, 華語文教學, 華語文學習, 泰北華校, 學習資源網">
 
+  <!-- style sheet -->
+  <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/vendor/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/vendor/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/main.css">
 
-    <link rel="stylesheet" href="/fonts/icomoon/style.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="/css/aos.css">
+  <title>小泰陽華文樂園</title>
+</head>
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+<body>
+  <!-- navbar with hambergur and fixed-top -->
+  <nav class="navbar navbar-expand-md navbar-light sticky-top shadow-sm bg_white" id="topNav">
+    <div class="container">
+      <a class="navbar-brand" href="/home">
+        <img class="img-fluid" src="/image/小泰陽華文樂園logo_d.svg" alt="小泰陽華文樂園logo" width="250px">
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-    <div class="site-wrap" id="home-section">
-
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav row ms-auto" id="navList">
+          <li class="nav-item col-sm-6 col-md-3">
+            <a class="nav-link text-center m-auto text_dark w_150 <?php if ($page == "student") echo 'active'; ?>" href="/student">學生學習區</a>
+          </li>
+          <li class="nav-item col-sm-6 col-md-3">
+            <a class="nav-link text-center m-auto text_dark w_150 <?php if ($page == "teacher") echo 'active'; ?>" href="/teacher">教師交流區</a>
+          </li>
+          <li class="nav-item col-sm-6 col-md-3">
+            <a class="nav-link text-center m-auto text_dark w_150 <?php if ($page == "recommend") echo 'active'; ?>" href="/recommend">好站推薦</a>
+          </li>
+          <li class="nav-item col-sm-6 col-md-3">
+            <a class="nav-link text-center m-auto text_dark w_150" href="https://drive.google.com/drive/u/5/folders/1PZ2xdEBupc0j3_NFL2_Ch7p-gLDAUHYc" target="_blank">下載專區</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-
-
-      <header class="site-navbar site-navbar-target" role="banner">
-
-        <div class="container mb-3">
-          <div class="d-flex align-items-center">
-            <div class="site-logo mr-auto">
-              <a href="/home"><img src="/images/logo_a.png" width="405" height="125" class="img-fluid"></a>
-            </div>
-            <div class="site-quick-contact d-none d-lg-flex ml-auto ">
-
-
-            </div>
-          </div>
-        </div>
-
-
-        <div class="container">
-          <div class="menu-wrap d-flex align-items-center">
-            <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
-
-
-
-            <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
-
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto">
-                <li><a href="/" class="nav-link"><span class="text-cursive h5 <?php if ($page == "home") echo 'text-teal'; ?>">首頁</span></a></li>
-                <li><a href="/about" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text-cursive h5 <?php if ($page == "about") echo 'text-teal'; ?>">關於我們</span></a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/about/origin"><span class="text-cursive h5">網站緣起</span></a>
-                    <a class="dropdown-item" href="/about/history"><span class="text-cursive h5">網站沿革</span></a>
-                    <a class="dropdown-item" href="/about/thaipeisunny"><span class="text-cursive h5">關於小泰陽</span></a>
-                  </div>
-
-                </li>
-                <li><a href="/student" class="nav-link"><span class="text-cursive h5 <?php if ($page == "student") echo 'text-teal'; ?>">學生學習區</span></a></li>
-                <li><a href="/resource" class="nav-link"><span class="text-cursive h5 <?php if ($page == "resource") echo 'text-teal'; ?>">教師交流區</span></a></li>
-                <li><a href="/links" class="nav-link"><span class="text-cursive h5 <?php if ($page == "links") echo 'text-teal'; ?>">好站推薦</span></a></li>
-                <li> <a href="https://drive.google.com/drive/folders/1PZ2xdEBupc0j3_NFL2_Ch7p-gLDAUHYc?usp=sharing" target="_blank" class="nav-link"><span class="text-cursive h5 <?php if ($page == "download") echo 'text-teal'; ?>">下載專區</span></a></li>
-              </ul>
-            </nav>
-
-
-          </div>
-        </div>
-
-
-
-      </header>
+  <!-- goTop button -->
+  <button class="shadow top_btn" id="goTop" type="button">
+    <i class="fa fa-angle-up fs-3 text_dark" aria-hidden="true"></i>
+  </button>

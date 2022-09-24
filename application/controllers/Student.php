@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class student extends CI_Controller
+class Student extends CI_Controller
 {
 
    /**
@@ -19,20 +19,11 @@ class student extends CI_Controller
     * map to /index.php/welcome/<method_name>
     * @see https://codeigniter.com/user_guide/general/urls.html
     */
+
    public function index()
    {
       $data['page'] = "student";
-
-
       $this->load->view('student/index.php', $data);
-   }
-
-   public function detail()
-   {
-      $data['page'] = "student";
-
-
-      $this->load->view('student/detail.php', $data);
    }
 
    public function zhuyin()
@@ -40,11 +31,37 @@ class student extends CI_Controller
       $data['page'] = "student";
       $this->load->model('Student_Model');
       $result1 = $this->Student_Model->query_zhuyin();
-      //$result = $column->row();
       $data['viewClass1'] = $result1;
-
       $this->load->view('student/zhuyin.php', $data);
    }
+
+   public function textbook()
+   {
+      $data['page'] = "student";
+      $this->load->model('Student_Model');
+      $result1 = $this->Student_Model->query_textbook();
+      // $result2 = $this->Student_Model->query_textbook($id, '2');
+      $data['viewClass1'] = $result1;
+      // $data['viewClass2'] = $result2;
+      // $data['grade'] = $id;
+      $this->load->view('student/textbook.php', $data);
+   }
+
+   public function kidsreader($id)
+   {
+      $data['page'] = "student";
+      $this->load->model('Student_Model');
+      $result1 = $this->Student_Model->query_query_kidsreader($id, '1');
+      $result2 = $this->Student_Model->query_query_kidsreader($id, '2');
+      $data['viewClass1'] = $result1;
+      $data['viewClass2'] = $result2;
+      $data['grade'] = $id;
+      $this->load->view('student/kidsreader.php', $data);
+   }
+
+
+   ////
+
 
    public function life()
    {
@@ -75,7 +92,6 @@ class student extends CI_Controller
    {
       $data['page'] = "student";
       $this->load->model('Student_Model');
-
       $this->load->view('student/holiday.php', $data);
    }
 

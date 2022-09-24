@@ -1,0 +1,139 @@
+/*---------------- main background ----------------*/
+.hw_100 {
+    height: 100vh;
+    width: 100vw;
+}
+
+.wheel_svg {
+    width: 360px;
+}
+
+.welcome_svg,
+.slogan_svg {
+    width: 240px;
+}
+
+@media screen and (min-width:576px) {
+
+    .welcome_svg,
+    .slogan_svg {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1200px) {
+    .wheel_svg {
+        width: 480px;
+    }
+
+    .welcome_svg,
+    .slogan_svg {
+        width: 480px;
+    }
+}
+
+/*---------------- navigation ----------------*/
+.nav_top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav .text_dark:visited {
+    color: #333333;
+}
+
+nav .text_dark:hover {
+    color: #e36600;
+    transition: all 0.4s;
+}
+
+.nav_list_bg {
+    background-color: rgba(255, 251, 243, 0.8);
+}
+
+@media screen and (min-width:768px) {
+    .nav_list_bg {
+        background-color: rgba(255, 251, 243, 0);
+    }
+
+    .w_150 {
+        width: 150px;
+    }
+
+    nav .text_dark:hover {
+        color: #333333;
+    }
+
+    .nav_btn {
+        background-color: #FFF9E1;
+        border: #333333 solid 1px;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .nav_btn:hover {
+        background-color: #F8DE76;
+        /* border: 0px; */
+        box-shadow: none;
+        transition: all 0.4s;
+    }
+}
+
+/*---------------- scrollDown button ----------------*/
+.down_btn i {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    color: #FA760A;
+    transform: translate(-50%, -100%);
+}
+
+.down_btn i:hover {
+    color: #e36600;
+    transition: all 0.4s;
+}
+
+@media screen and (min-width:576px) {
+    .down_btn i {
+        bottom: 0;
+    }
+}
+
+/*---------------- card ----------------*/
+.card .text_orange:hover {
+    color: #e36600;
+    transition: all 0.4s;
+}
+
+/*---------------- section ----------------*/
+.section_btn {
+    background-color: #FA760A;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section_btn:hover {
+    background-color: #e36600;
+    box-shadow: none;
+    transition: all 0.4s;
+}
+
+section .text_light:hover {
+    color: #FFFEF9;
+}
+
+section .text_orange:hover {
+    color: #e36600;
+    transition: all 0.4s;
+}
+
+/*---------------- about ----------------*/
+article .text_orange:hover {
+    color: #e36600;
+    transition: all 0.4s;
+}

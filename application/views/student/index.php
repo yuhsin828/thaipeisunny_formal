@@ -1,84 +1,77 @@
 <!doctype html>
 <html lang="en">
 
-<?php $this->load->view("common/header.php");?>
+<?php $this->load->view("common/header.php"); ?>
 
-      <div class="ftco-blocks-cover-1">
-       <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
-      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('/images/學生學習區.JPG')">
-        <div class="container">
-          <div class="row align-items-center ">
+<main class="bg_lemonYellow">
+  <div class="container py-5">
+    <!-- breadcrumb -->
+    <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb d-flex align-items-center">
+        <li class="breadcrumb-item">
+          <a class="text-decoration-none text_dark" href="/home">首頁</a>
+        </li>
+        <li class="breadcrumb-item text_dark active" aria-current="page">學生學習區</li>
+      </ol>
+    </div>
 
-            <div class="col-md-5 mt-5 pt-5">
-              <span class="text-cursive h5 text-red">Welcome To Our Thaipei Sunny</span>
-              <h1 class="text-cursive h5 text-teal">學生學習區</h1>
-              <p><a href="/home"><span  class="text-cursive text-white">首頁</span></a> <span class="mx-3">/</span> <span  class="text-cursive text-white">學生學習區</span></p>
-            </div>
-            
+    <div class="row g-3 g-lg-5 justify-content-center">
+      <!-- 課內學習 -->
+      <div class="col-sm-6 col-lg-4 my-5">
+        <div class="p-3 position-relative text-center bg_light round_1">
+          <div class="menu_ic_pos">
+            <img class="img-fluid ic_ctrl" src="/image/01_student/ic_in.png" alt="課內學習">
           </div>
+          <img class="img-fluid mb-3 mt-4" src="/image/01_student/title_in.svg" alt="課內學習">
+
+          <a class="" href="/student/zhuyin">
+            <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
+              <img class="img-fluid" src="/image/01_student/btn_in_zhuyin.svg" alt="注音符號">
+            </div>
+          </a>
+          <a class="" href="/student/kidsreader">
+            <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
+              <img class="img-fluid" src="/image/01_student/btn_in_kid.svg" alt="幼兒園讀本唸讀">
+            </div>
+          </a>
+          <a class="" href="/student/textbook">
+            <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
+              <img class="img-fluid" src="/image/01_student/btn_in_elementary.svg" alt="小學部課本唸讀">
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 課外學習 -->
+      <div class="col-sm-6 col-lg-4 my-5">
+        <div class="p-3 position-relative text-center bg_light round_1">
+          <div class="menu_ic_pos">
+            <img class="img-fluid ic_ctrl" src="/image/01_student/ic_out.png" alt="課外學習">
+          </div>
+          <img class="img-fluid mb-3 mt-4" src="/image/01_student/title_out.svg" alt="課外學習">
+
+          <a class="" href="/student/story">
+            <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
+              <img class="img-fluid" src="/image/01_student/btn_out_story.svg" alt="小泰陽故事集">
+            </div>
+          </a>
+          <a class="" href="/student/huayu">
+            <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
+              <img class="img-fluid" src="/image/01_student/btn_out_huayu.svg" alt="生活華語">
+            </div>
+          </a>
+          <a class="" href="/student/holiday">
+            <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
+              <img class="img-fluid" src="/image/01_student/btn_out_holiday.svg" alt="中華節慶">
+            </div>
+          </a>
         </div>
       </div>
     </div>
+  </div>
+</main>
 
-     <div class="site-section" style="background-color: #d99694">
-      <div class="container">
-     
-        <div class="row align-items-stretch">
+<?php $this->load->view("common/footer.php"); ?>
 
-          <div class="col-lg-4  col-md-4 mb-5"   style="background-image:url('images/student/1_1_0課內學習.png');background-size: contain;background-repeat: no-repeat;float: left;margin: 5px;height: 500px;width: 500px" >
-              <div style="position: relative;top:160px;left: 40px;float: left;width: 320px;">
-                    <p><a href="/student/zhuyin"><img src="images/student/1_1_1注音符號.png" alt="Image"
-                 class="img-fluid" style="width: 80%;height: 80%;position: relative;float: left;margin-bottom: 8px"></a></p>
-                    <p><a href="#"><img src="images/student/1_1_2注音符號歌曲(灰).png" alt="Image"
-                 class="img-fluid" style="width: 80%;height: 80%;position: relative;float: left;margin-bottom: 8px"></a></p>
-                    <p><a href="/kidsreading/detail/1"><img src="images/student/1_1_3華語讀本唸讀.png" alt="Image"
-                 class="img-fluid" style="width: 80%;height: 80%;position: relative;float: left;margin-bottom: 8px"></a></p>
-                    <p><a href="/textbook"><img src="images/student/1_1_4華文課本唸讀.png" alt="Image"
-                 class="img-fluid" style="width: 80%;height: 80%;position: relative;float: left;margin-bottom: 8px"></a></p>
-            </div>
-          </div>
-          
-          <div class="col-lg-4  col-md-4 mb-5"   style="background-image:url('images/student/1_2_0課外學習.png');background-size: contain;background-repeat: no-repeat;float: left;margin: 5px;height: 500px;width: 500px;" >
-              <div style="position: relative;top:160px;left: 40px;float: left;width: 320px;">
-                    <p><a href="/story/"><img src="images/student/1_2_1小泰陽故事集.png" alt="Image"
-                 class="img-fluid" style="width: 80%;height: 80%;position: relative;float: left;margin-bottom: 8px"></a></p>
-                    <p><a href="/student/life/"><img src="images/student/1_2_2生活華語(藍).png" alt="Image"
-                 class="img-fluid" style="width: 80%;height: 80%;position: relative;float: left;margin-bottom: 8px"></a></p>
-                    <p><a href="/student/holiday/"><img src="images/student/1_2_3中華節慶(藍).png" alt="Image"
-                 class="img-fluid" style="width: 80%;height: 80%;position: relative;float: left;margin-bottom: 8px"></a></p>
-                    <p><a href="#"><img src="images/student/1_2_4唱跳學華語(灰).png" alt="Image"
-                 class="img-fluid" style="width: 80%;height: 80%;position: relative;float: left;margin-bottom: 8px"></a></p>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 mb-5"   style="background-image:url('images/student/1_3_0 Facebook社團.png');background-size: contain;background-repeat: no-repeat;float: left;margin: 5px;height: 500px;width: 500px;" >
-              <div style="position: relative;top:340px;left: 40px;width: 320px;">
-                    <p><a href="https://www.facebook.com/groups/thaipeisunny.web.discussion/" target="_blank"><img src="images/student/1_3_1加入社團(藍).png" alt="Image"
-                 class="img-fluid" style="width: 80%;height: 80%;position: relative;float: left;margin-bottom: 8px"></a></p>
-               
-            </div>
-          </div>
-          
-         
-
-
-        
-
-
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-    
-<?php $this->load->view("common/footer.php");?>
-    
-
-  </body>
+</body>
 
 </html>
-
