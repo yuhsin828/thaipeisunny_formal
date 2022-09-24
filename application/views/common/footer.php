@@ -2,7 +2,7 @@
   <div class="container py-5">
     <div class="d-flex justify-content-evenly align-items-center mb-2">
       <div class="">
-        <img class="img-fluid" src="/image/小泰陽華文樂園logo_l.svg" alt="小泰陽華文樂園logo" width="280px">
+        <img class="img-fluid" src="/images/小泰陽華文樂園logo_l.svg" alt="小泰陽華文樂園logo" width="250px">
       </div>
       <ul class="nav d-flex justify-content-between">
         <li class="nav-item"><a class="nav-link text_light" href="/guide">網站導覽</a></li>

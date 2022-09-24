@@ -21,46 +21,46 @@
     <!-- 標籤切換鈕 -->
     <div class="row">
       <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g1">
-        <img class="img-fluid pointer" src="/image/01_student/03_textbook/g1.svg" alt="一年級" onclick="gradeClick(1)">
+        <img class="img-fluid pointer" src="/images/textbook/g1.svg" alt="一年級" onclick="gradeClick(1)">
       </div>
       <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g2">
-        <img class="img-fluid pointer" src="/image/01_student/03_textbook/g2.svg" alt="二年級" onclick="gradeClick(2)">
+        <img class="img-fluid pointer" src="/images/textbook/g2.svg" alt="二年級" onclick="gradeClick(2)">
       </div>
       <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g3">
-        <img class="img-fluid pointer" src="/image/01_student/03_textbook/g3.svg" alt="三年級" onclick="gradeClick(3)">
+        <img class="img-fluid pointer" src="/images/textbook/g3.svg" alt="三年級" onclick="gradeClick(3)">
       </div>
       <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g4">
-        <img class="img-fluid pointer" src="/image/01_student/03_textbook/g4.svg" alt="四年級" onclick="gradeClick(4)">
+        <img class="img-fluid pointer" src="/images/textbook/g4.svg" alt="四年級" onclick="gradeClick(4)">
       </div>
       <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g5">
-        <img class="img-fluid pointer" src="/image/01_student/03_textbook/g5.svg" alt="五年級" onclick="gradeClick(5)">
+        <img class="img-fluid pointer" src="/images/textbook/g5.svg" alt="五年級" onclick="gradeClick(5)">
       </div>
       <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g6">
-        <img class="img-fluid pointer" src="/image/01_student/03_textbook/g6.svg" alt="六年級" onclick="gradeClick(6)">
+        <img class="img-fluid pointer" src="/images/textbook/g6.svg" alt="六年級" onclick="gradeClick(6)">
       </div>
     </div>
 
     <!-- 播放器 -->
-    <div class="player_pos">
+    <!-- <div class="player_pos">
       <audio id="audio1" src="" controls></audio>
-    </div>
+    </div> -->
 
     <!-- 課次選單 -->
     <div class="row bg_white">
       <div class="py-3 px-3 px-lg-5 show active">
         <!-- 播放器 -->
-        <!-- <div class="row justify-content-center mb-3">
-          <audio src="./image/01_student/03_textbook/一上 L1.wav" controls></audio>
-        </div> -->
+        <div class="row justify-content-center my-3">
+          <audio id="audio1" src="" controls></audio>
+        </div>
 
         <!-- 上學期 -->
         <div class="d-flex justify-content-center my-3">
-          <img src="/image/01_student/03_textbook/s1.svg" alt="上學期">
+          <img src="/images/textbook/s1.svg" alt="上學期">
         </div>
         <div class="d-flex justify-content-center flex-wrap gap-2 gap-sm-3 mb-5">
           <?php for ($i = 1; $i <= 15; $i++) {
             echo '<div class="bg_lightPink round_1 box_shadow_2 pointer" id="S1L' . $i . '" onclick="lessonClick(1, ' . $i . ')">';
-            echo ' <img class="img-fluid" src="/image/01_student/03_textbook/l' . $i . '.svg" alt="第' . $i . '課">';
+            echo ' <img class="img-fluid" src="/images/textbook/l' . $i . '.svg" alt="第' . $i . '課">';
             echo '</div>';
           }
           ?>
@@ -68,12 +68,12 @@
 
         <!-- 下學期 -->
         <div class="d-flex justify-content-center mb-3">
-          <img src="/image/01_student/03_textbook/s2.svg" alt="下學期">
+          <img src="/images/textbook/s2.svg" alt="下學期">
         </div>
         <div class="d-flex justify-content-center flex-wrap gap-2 gap-sm-3 mb-5">
           <?php for ($i = 1; $i <= 15; $i++) {
             echo '<div class="bg_lightPink round_1 box_shadow_2 pointer" id="S2L' . $i . '" onclick="lessonClick(2, ' . $i . ')">';
-            echo ' <img class="img-fluid" src="/image/01_student/03_textbook/l' . $i . '.svg" alt="第' . $i . '課">';
+            echo ' <img class="img-fluid" src="/images/textbook/l' . $i . '.svg" alt="第' . $i . '課">';
             echo '</div>';
           }
           ?>
@@ -137,7 +137,7 @@
 
   function playMp3() {
     $('#audio1').attr("autoplay", "");
-    $('#audio1').attr("src", '/wav/' + curGrade + '_' + curSemester + '_' + 'L' + curLesson + '.wav');
+    $('#audio1').attr("src", '/wav/textbook/' + curGrade + '_' + curSemester + '_' + 'L' + curLesson + '.wav');
   }
 
   function endMp3() {

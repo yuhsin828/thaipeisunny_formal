@@ -38,26 +38,33 @@ class Student extends CI_Controller
    public function textbook()
    {
       $data['page'] = "student";
-      $this->load->model('Student_Model');
-      $result1 = $this->Student_Model->query_textbook();
-      // $result2 = $this->Student_Model->query_textbook($id, '2');
-      $data['viewClass1'] = $result1;
-      // $data['viewClass2'] = $result2;
-      // $data['grade'] = $id;
+      // $this->load->model('Student_Model');
+      // $result1 = $this->Student_Model->query_textbook();
+      // $data['viewClass1'] = $result1;
       $this->load->view('student/textbook.php', $data);
    }
 
-   public function kidsreader($id)
+   public function kidsreader()
    {
       $data['page'] = "student";
-      $this->load->model('Student_Model');
-      $result1 = $this->Student_Model->query_query_kidsreader($id, '1');
-      $result2 = $this->Student_Model->query_query_kidsreader($id, '2');
-      $data['viewClass1'] = $result1;
-      $data['viewClass2'] = $result2;
-      $data['grade'] = $id;
+      // $this->load->model('Student_Model');
+      // $result1 = $this->Student_Model->query_query_kidsreader();
+      // $data['viewClass1'] = $result1;
       $this->load->view('student/kidsreader.php', $data);
    }
+
+   public function stories()
+   {
+      $data['page'] = "student";
+      $this->load->view('student/stories.php', $data);
+   }
+
+   // public function story($id)
+   // {
+   //    $data['page'] = "student";
+   //    $data['pageID'] = $id;
+   //    $this->load->view('student/story.php', $data);
+   // }
 
 
    ////

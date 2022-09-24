@@ -18,18 +18,18 @@ class Story extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$data['page']="student";
+	// public function index()
+	// {
+	// 	$data['page']="student";
         
-		$this->load->view('story/index.php',$data);
-	}
+	// 	$this->load->view('story/index.php',$data);
+	// }
 	
-    public function detail($id)
-    {
-        $data['page']="student";
-        $data['pageID']=$id;
-        $this->load->view('story/detail.php',$data);
-    }
+    // public function detail($id)
+    // {
+    //     $data['page']="student";
+    //     $data['pageID']=$id;
+    //     $this->load->view('story/detail.php',$data);
+    // }
 	
 }

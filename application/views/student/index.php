@@ -20,23 +20,23 @@
       <div class="col-sm-6 col-lg-4 my-5">
         <div class="p-3 position-relative text-center bg_light round_1">
           <div class="menu_ic_pos">
-            <img class="img-fluid ic_ctrl" src="/image/01_student/ic_in.png" alt="課內學習">
+            <img class="img-fluid ic_ctrl" src="/images/student/ic_in.png" alt="課內學習">
           </div>
-          <img class="img-fluid mb-3 mt-4" src="/image/01_student/title_in.svg" alt="課內學習">
+          <img class="img-fluid mb-3 mt-4" src="/images/student/title_in.svg" alt="課內學習">
 
           <a class="" href="/student/zhuyin">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
-              <img class="img-fluid" src="/image/01_student/btn_in_zhuyin.svg" alt="注音符號">
+              <img class="img-fluid" src="/images/student/btn_in_zhuyin.svg" alt="注音符號">
             </div>
           </a>
           <a class="" href="/student/kidsreader">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
-              <img class="img-fluid" src="/image/01_student/btn_in_kid.svg" alt="幼兒園讀本唸讀">
+              <img class="img-fluid" src="/images/student/btn_in_kidsreader.svg" alt="幼兒園讀本唸讀">
             </div>
           </a>
           <a class="" href="/student/textbook">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
-              <img class="img-fluid" src="/image/01_student/btn_in_elementary.svg" alt="小學部課本唸讀">
+              <img class="img-fluid" src="/images/student/btn_in_textbook.svg" alt="小學部課本唸讀">
             </div>
           </a>
         </div>
@@ -45,23 +45,23 @@
       <div class="col-sm-6 col-lg-4 my-5">
         <div class="p-3 position-relative text-center bg_light round_1">
           <div class="menu_ic_pos">
-            <img class="img-fluid ic_ctrl" src="/image/01_student/ic_out.png" alt="課外學習">
+            <img class="img-fluid ic_ctrl" src="/images/student/ic_out.png" alt="課外學習">
           </div>
-          <img class="img-fluid mb-3 mt-4" src="/image/01_student/title_out.svg" alt="課外學習">
+          <img class="img-fluid mb-3 mt-4" src="/images/student/title_out.svg" alt="課外學習">
 
-          <a class="" href="/student/story">
+          <a class="" href="/student/stories">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
-              <img class="img-fluid" src="/image/01_student/btn_out_story.svg" alt="小泰陽故事集">
+              <img class="img-fluid" src="/images/student/btn_out_story.svg" alt="小泰陽故事集">
             </div>
           </a>
           <a class="" href="/student/huayu">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
-              <img class="img-fluid" src="/image/01_student/btn_out_huayu.svg" alt="生活華語">
+              <img class="img-fluid" src="/images/student/btn_out_huayu.svg" alt="生活華語">
             </div>
           </a>
           <a class="" href="/student/holiday">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
-              <img class="img-fluid" src="/image/01_student/btn_out_holiday.svg" alt="中華節慶">
+              <img class="img-fluid" src="/images/student/btn_out_holiday.svg" alt="中華節慶">
             </div>
           </a>
         </div>

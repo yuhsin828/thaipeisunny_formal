@@ -31,16 +31,16 @@
         <div class="col-md-6 mb-3 text-center">
           <!-- lottie animation -->
           <div class="wheel_ctrl d-flex justify-content-center justify-content-lg-end">
-            <!-- <div class="img-fluid wheel_svg" id="ferrisWheel"></div> -->
-            <img class="img-fluid wheel_svg" src="/image/小泰陽摩天輪.png" alt="小泰陽摩天輪">
+            <div class="img-fluid wheel_svg" id="ferrisWheel"></div>
+            <!-- <img class="img-fluid wheel_svg" src="/images/home/小泰陽摩天輪.png" alt="小泰陽摩天輪"> -->
           </div>
         </div>
         <div class="col-md-6 text-center text-lg-start">
           <div class="welcome_ctrl mb-2 mb-md-3">
-            <img class="img-fluid welcome_svg" src="/image/welcome.svg" alt="歡迎來到小泰陽華文樂園">
+            <img class="img-fluid welcome_svg" src="/images/home/welcome.svg" alt="歡迎來到小泰陽華文樂園">
           </div>
           <div class="slogan_ctrl">
-            <img class="img-fluid slogan_svg" src="/image/slogan.svg" alt="一起暢遊華文吧！">
+            <img class="img-fluid slogan_svg" src="/images/home/slogan.svg" alt="一起暢遊華文吧！">
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@
     <nav class="navbar navbar-expand-md navbar-light nav_ctrl" id="topNav">
       <div class="container">
         <a class="navbar-brand d-none" href="/home">
-          <img class="img-fluid" src="/image/小泰陽華文樂園logo_d.svg" alt="小泰陽華文樂園logo" width="250px">
+          <img class="img-fluid" src="/images/小泰陽華文樂園logo_d.svg" alt="小泰陽華文樂園logo" width="250px">
         </a>
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -96,7 +96,7 @@
         <!-- huayu -->
         <div class="item">
           <div class="card round_20">
-            <img class="card-img-top" src="/image/00_home/not yet.png" alt="...">
+            <img class="card-img-top" src="/images/home/not yet.png" alt="生活華語">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">生活華語</h5>
               <p class="card-text text-center overflow_dot">食物、場所、交通工具</p>
@@ -111,7 +111,7 @@
         <!-- holiday -->
         <div class="item">
           <div class="card round_20">
-            <img class="card-img-top" src="/image/00_home/not yet.png" alt="...">
+            <img class="card-img-top" src="/images/home/not yet.png" alt="中華節慶">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">中華節慶</h5>
               <p class="card-text text-center overflow_dot">春節、元宵節、清明節、端午節、七夕、中元節、中秋節、重陽節</p>
@@ -126,7 +126,7 @@
         <!-- story -->
         <div class="item">
           <div class="card round_20">
-            <img class="card-img-top" src="/image/00_home/not yet.png" alt="...">
+            <img class="card-img-top" src="/images/home/not yet.png" alt="小泰陽故事集">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">小泰陽故事集</h5>
               <p class="card-text text-center overflow_dot">三隻小豬、龜兔賽跑、誠實的小豬、小八立大功、天堂地獄、放羊的孩子、邦邦想飛</p>
@@ -148,7 +148,7 @@
       <!-- student -->
       <div class="row flex-row-reverse justify-content-evenly align-items-center mb-5">
         <div class="col-md-5 d-flex justify-content-center">
-          <img class="img-fluid mb-4" src="/image/00_home/學生學習區.png" alt="學生學習區" width="360px">
+          <img class="img-fluid mb-4" src="/images/home/學生學習區.png" alt="學生學習區" width="360px">
         </div>
         <div class="col-md-5">
           <h5 class="fw-bolder">學生學習區</h5>
@@ -161,7 +161,7 @@
       <!-- teacher -->
       <div class="row flex-row justify-content-evenly align-items-center mb-5">
         <div class="col-md-5 d-flex justify-content-center">
-          <img class="img-fluid mb-4" src="/image/00_home/教師交流區.png" alt="教師交流區" width="360px">
+          <img class="img-fluid mb-4" src="/images/home/教師交流區.png" alt="教師交流區" width="360px">
         </div>
         <div class="col-md-5">
           <h5 class="fw-bolder">教師交流區</h5>
@@ -174,7 +174,7 @@
       <!-- recommend -->
       <div class="row flex-row-reverse justify-content-evenly align-items-center mb-5">
         <div class="col-md-5 d-flex justify-content-center">
-          <img class="img-fluid mb-4" src="/image/00_home/好站推薦.png" alt="好站推薦" width="360px">
+          <img class="img-fluid mb-4" src="/images/home/好站推薦.png" alt="好站推薦" width="360px">
         </div>
         <div class="col-md-5">
           <h5 class="fw-bolder">好站推薦</h5>
@@ -187,7 +187,7 @@
       <!-- download -->
       <div class="row flex-row justify-content-evenly align-items-center">
         <div class="col-md-5 d-flex justify-content-center">
-          <img class="img-fluid mb-4" src="/image/00_home/下載專區.png" alt="下載專區" width="360px">
+          <img class="img-fluid mb-4" src="/images/home/下載專區.png" alt="下載專區" width="360px">
         </div>
         <div class="col-md-5">
           <h5 class="fw-bolder">下載專區</h5>
@@ -209,7 +209,7 @@
       </div>
       <div class="row flex-row-reverse justify-content-center align-items-center">
         <div class="col-md-4 d-flex justify-content-center">
-          <img class="img-fluid mb-4" src="/image/00_home/臉書社團.png" alt="加入FB交流社團" width="360px">
+          <img class="img-fluid mb-4" src="/images/home/臉書社團.png" alt="加入FB交流社團" width="360px">
         </div>
         <div class="col-md-4">
           <p class="text-start lh-lg">歡迎在泰北學習華文的孩子們加入社團，跟著小泰陽的老師一起學習更多有趣的華文吧！</p>
@@ -228,7 +228,7 @@
     <div class="container py-5">
       <div class="row">
         <div class="col-lg-6 p-3">
-          <img class="img-fluid round_20" src="/image/00_home/about-us.JPG" alt="關於小泰陽">
+          <img class="img-fluid round_20" src="/images/home/about-us.JPG" alt="關於小泰陽">
         </div>
         <div class="col-lg-6 p-3 d-flex align-items-center justify-content-center row">
           <div class="col-xl-10">

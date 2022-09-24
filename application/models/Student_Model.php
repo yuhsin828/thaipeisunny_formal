@@ -8,17 +8,17 @@ class  Student_Model extends CI_Model
     return $this->db->query($sql, array());
   }
 
-  function query_textbook()
-  {
-    $sql = "SELECT * FROM textbook_reading order by textbook_reading_no asc";
-    return $this->db->query($sql, array());
-  }
+  // function query_textbook()
+  // {
+  //   $sql = "SELECT * FROM textbook_reading order by textbook_reading_no asc";
+  //   return $this->db->query($sql, array());
+  // }
 
-  function query_kidsreader($id, $s)
-  {
-    $sql = "SELECT * FROM kids_reading  where textbook_reading_grade=? and textbook_reading_semester=? order by textbook_reading_no asc";
-    return $this->db->query($sql, array($id, $s));
-  }
+  // function query_kidsreader()
+  // {
+  //   $sql = "SELECT * FROM kids_reading  where textbook_reading_grade=? and textbook_reading_semester=? order by textbook_reading_no asc";
+  //   return $this->db->query($sql, array());
+  // }
 
   //
 
