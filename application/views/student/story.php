@@ -3,118 +3,90 @@
 
 <?php $this->load->view("common/header.php"); ?>
 
-<div class="ftco-blocks-cover-1">
-  <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
-  <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('/images/學生學習區.JPG')">
-    <div class="container">
-      <div class="row align-items-center ">
+<main class="bg_lemonYellow">
+  <div class="container py-5">
+    <!-- breadcrumb -->
+    <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb d-flex align-items-center">
+        <li class="breadcrumb-item">
+          <a class="text-decoration-none text_dark" href="/home">首頁</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a class="text-decoration-none text_dark" href="/student">學生學習區</a>
+        </li>
+        <li class="breadcrumb-item text_dark active" aria-current="page">小泰陽故事集</li>
+      </ol>
+    </div>
 
-        <div class="col-md-5 mt-5 pt-5">
-          <span class="text-cursive h5 text-red">Welcome To Our Thaipei Sunny</span>
-          <h1 class="text-cursive h5 text-teal">小泰陽故事集</h1>
-          <p><a href="/home"><span class="text-cursive text-white">首頁</span></a> <span class="mx-3">/</span> <span class="text-cursive text-white">學生學習區</span>/</span> <span class="text-cursive text-white">小泰陽故事集</span></p>
+    <div class="row px-3 px-lg-5">
+      <div class="owl-carousel owl-theme">
+        <div class="item pointer" id="" onclick="storyClick('WVcJxerM6CA')">
+          <img class="img-fluid round_1 box_shadow_2" src="/images/story/三隻小豬.png" alt="三隻小豬">
         </div>
+        <div class="item pointer" id="" onclick="storyClick('WaCF-WGOrFw')">
+          <img class="img-fluid round_1 box_shadow_2" src="/images/story/龜兔賽跑.png" alt="龜兔賽跑">
+        </div>
+        <div class="item pointer" id="" onclick="storyClick('G45JKiOGGtU')">
+          <img class="img-fluid round_1 box_shadow_2" src="/images/story/誠實的小豬.png" alt="誠實的小豬">
+        </div>
+        <div class="item pointer" id="" onclick="storyClick('aww6goxkc6g')">
+          <img class="img-fluid round_1 box_shadow_2" src="/images/story/小八立大功.png" alt="小八立大功">
+        </div>
+        <div class="item pointer" id="" onclick="storyClick('vCmBWzr-clc')">
+          <img class="img-fluid round_1 box_shadow_2" src="/images/story/天堂地獄.png" alt="天堂地獄">
+        </div>
+        <div class="item pointer" id="" onclick="storyClick('6tKClhM7OqM')">
+          <img class="img-fluid round_1 box_shadow_2" src="/images/story/放羊的孩子.png" alt="放羊的孩子">
+        </div>
+        <div class="item pointer" id="" onclick="storyClick('8N6KyORu-Ew')">
+          <img class="img-fluid round_1 box_shadow_2" src="/images/story/邦邦想飛.png" alt="邦邦想飛">
+        </div>
+      </div>
 
+      <div class="video_container mb-5 d-none">
+        <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
-</div>
-
-<div class="site-section" style="background-color: #d99694">
-  <div class="container">
-    <div class="row justify-content-md-center">
-
-      <div class="col-lg-6 col-md-4 mb-5">
-        <img src="/images/story/b_0_純文字(小泰陽故事集).png" alt="Image" class="img-fluid">
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div class="col-3">
-        <div><img id="img1" src="/images/story/b_2_1.png" alt="Image" class="img-fluid" onclick="changeVideo('1');"></div>
-        <div><img id="img2" src="/images/story/b_2_2.png" alt="Image" class="img-fluid" onclick="changeVideo('2');"></div>
-        <div><img id="img3" src="/images/story/b_2_3.png" alt="Image" class="img-fluid" onclick="changeVideo('3');"></div>
-        <div><img id="img4" src="/images/story/b_2_4.png" alt="Image" class="img-fluid" onclick="changeVideo('4');"></div>
-        <div><img id="img5" src="/images/story/b_2_5.png" alt="Image" class="img-fluid" onclick="changeVideo('5');"></div>
-        <div><img id="img6" src="/images/story/b_2_6.png" alt="Image" class="img-fluid" onclick="changeVideo('6');"></div>
-        <div><img id="img7" src="/images/story/b_2_7.png" alt="Image" class="img-fluid" onclick="changeVideo('7');"></div>
-      </div>
-      <div class="col-9">
-        <div>
-          <iframe id="iFrameID" width="900" height="500" src="https://www.youtube.com/embed/WVcJxerM6CA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</main>
 
 <?php $this->load->view("common/footer.php"); ?>
-
 
 </body>
 
 </html>
+
+
+
 <script>
-  var curVideo;
-  var YTUrl = "https://www.youtube.com/embed/";
-  curVideo = '<?php echo $pageID; ?>';
+  function storyClick(id) {
+    $('.video_container').removeClass('d-none');
+    $('#videoPlayer').attr("src", 'https://www.youtube.com/embed/' + id);
 
-  clearImage();
-  setURL(curVideo);
-
-  function clearImage() {
-
-    $('#img1').attr("src", '/images/story/b_2_1.png');
-    $('#img2').attr("src", '/images/story/b_2_2.png');
-    $('#img3').attr("src", '/images/story/b_2_3.png');
-    $('#img4').attr("src", '/images/story/b_2_4.png');
-    $('#img5').attr("src", '/images/story/b_2_5.png');
-    $('#img6').attr("src", '/images/story/b_2_6.png');
-    $('#img7').attr("src", '/images/story/b_2_7.png');
+    const item = $('.video_container').offset().top - $('.navbar').innerHeight();
+    $('html,body').animate({
+      scrollTop: item
+    }, 200);
   }
 
-  function setURL(id) {
-    var video;
-    switch (id) {
-      case "1":
-        $('#img1').attr("src", '/images/story/b_2_1_red.png');
-        video = 'WVcJxerM6CA';
-        break;
-      case "2":
-        $('#img2').attr("src", '/images/story/b_2_2_red.png');
-        video = 'WaCF-WGOrFw';
-        break;
-      case "3":
-        $('#img3').attr("src", '/images/story/b_2_3_red.png');
-        video = 'G45JKiOGGtU';
-        break;
-      case "4":
-        $('#img4').attr("src", '/images/story/b_2_4_red.png');
-        video = 'aww6goxkc6g';
-        break;
-      case "5":
-        $('#img5').attr("src", '/images/story/b_2_5_red.png');
-        video = 'vCmBWzr-clc';
-        break;
-      case "6":
-        $('#img6').attr("src", '/images/story/b_2_6_red.png');
-        video = '6tKClhM7OqM';
-        break;
-      case "7":
-        $('#img7').attr("src", '/images/story/b_2_7_red.png');
-        video = '8N6KyORu-Ew';
-        break;
-      default:
-        $('#img1').attr("src", '/images/story/b_2_1_red.png');
-        video = 'WVcJxerM6CA';
-        break;
+  /* owlCarousel圖卡輪播 */
+  $('.owl-carousel').owlCarousel({
+    loop: false,
+    margin: 10,
+    // nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 5
+      }
     }
-    $('#iFrameID').attr("src", YTUrl + video);
-  }
-
-  function changeVideo(id) {
-    clearImage();
-    setURL(id);
-  }
+  })
 </script>

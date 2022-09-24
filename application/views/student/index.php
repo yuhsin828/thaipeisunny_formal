@@ -49,7 +49,7 @@
           </div>
           <img class="img-fluid mb-3 mt-4" src="/images/student/title_out.svg" alt="課外學習">
 
-          <a class="" href="/student/stories">
+          <a class="" href="/student/story">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
               <img class="img-fluid" src="/images/student/btn_out_story.svg" alt="小泰陽故事集">
             </div>

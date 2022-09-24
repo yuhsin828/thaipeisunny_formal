@@ -53,46 +53,10 @@ class Student extends CI_Controller
       $this->load->view('student/kidsreader.php', $data);
    }
 
-   public function stories()
+   public function story()
    {
       $data['page'] = "student";
-      $this->load->view('student/stories.php', $data);
-   }
-
-   // public function story($id)
-   // {
-   //    $data['page'] = "student";
-   //    $data['pageID'] = $id;
-   //    $this->load->view('student/story.php', $data);
-   // }
-
-
-   ////
-
-
-   public function life()
-   {
-      $data['page'] = "student";
-      $this->load->model('Student_Model');
-      $result1 = $this->Student_Model->query_life('1');
-      $data['viewClass1'] = $result1;
-      $result2 = $this->Student_Model->query_life('2');
-      $data['viewClass2'] = $result2;
-      $result3 = $this->Student_Model->query_life('3');
-      $data['viewClass3'] = $result3;
-      $this->load->view('student/life.php', $data);
-   }
-
-   public function lifelist($id)
-   {
-      if ($id == "") $id = "1";
-      $data['page'] = "student";
-      $this->load->model('Student_Model');
-      $result = $this->Student_Model->query_lifeDetail($id);
-      $data['viewClass'] = $result;
-      $data['category'] = $id;
-      //$data['row_cnt']=$result->num_rows();
-      $this->load->view('student/lifelist.php', $data);
+      $this->load->view('student/story.php', $data);
    }
 
    public function holiday()
@@ -105,7 +69,7 @@ class Student extends CI_Controller
    public function holidaydetail($id)
    {
       $data['page'] = "student";
-      $this->load->model('Student_Model');
+      // $this->load->model('Student_Model');
 
       switch ($id) {
          case "1":  //春節
@@ -286,6 +250,35 @@ class Student extends CI_Controller
       }
 
       $this->load->view('student/holidaydetail.php', $data);
+   }
+
+
+   ////
+
+
+   public function life()
+   {
+      $data['page'] = "student";
+      $this->load->model('Student_Model');
+      $result1 = $this->Student_Model->query_life('1');
+      $data['viewClass1'] = $result1;
+      $result2 = $this->Student_Model->query_life('2');
+      $data['viewClass2'] = $result2;
+      $result3 = $this->Student_Model->query_life('3');
+      $data['viewClass3'] = $result3;
+      $this->load->view('student/life.php', $data);
+   }
+
+   public function lifelist($id)
+   {
+      if ($id == "") $id = "1";
+      $data['page'] = "student";
+      $this->load->model('Student_Model');
+      $result = $this->Student_Model->query_lifeDetail($id);
+      $data['viewClass'] = $result;
+      $data['category'] = $id;
+      //$data['row_cnt']=$result->num_rows();
+      $this->load->view('student/lifelist.php', $data);
    }
 
    function queryCurrentLife()

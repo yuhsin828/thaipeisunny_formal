@@ -23,7 +23,7 @@
       <div class="col-lg-4 my-3">
         <div class="d-flex flex-wrap justify-content-start gap-3">
           <?php foreach ($viewClass1->result() as $row) {
-            echo '<img class="img-fluid bg_lightPink round_50 box_shadow_2 pointer moveTo" id="' . $row->zhuyin_id2 . '" src="/images/zhuyin/' . $row->zhuyin_id2 . '" alt="' . $row->zhuyin_id2 . '" onclick="letterClick(\'' . $row->zhuyin_id2 . '\')">';
+            echo '<img class="img-fluid bg_lightPink round_50 box_shadow_2 pointer" id="' . $row->zhuyin_id2 . '" src="/images/zhuyin/' . $row->zhuyin_id2 . '" alt="' . $row->zhuyin_id2 . '" onclick="letterClick(\'' . $row->zhuyin_id2 . '\')">';
           }
           ?>
         </div>
@@ -68,13 +68,6 @@
   let voice = 0;
   letterClick('01');
 
-  $('.moveTo').click(function() {
-    const item = $('#zhuyinMain').offset().top - $('.navbar').innerHeight();
-    $('html,body').animate({
-      scrollTop: item
-    }, 200);
-  });
-
   function letterClick(id2) {
     letter = id2;
     clearList();
@@ -89,6 +82,11 @@
     } else {
       $('#' + id2).removeClass('bg_lightBlue').addClass('bg_blue');
     }
+
+    const item = $('#zhuyinMain').offset().top - $('.navbar').innerHeight();
+    $('html,body').animate({
+      scrollTop: item
+    }, 200);
   }
 
   function clearList() {

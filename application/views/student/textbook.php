@@ -20,22 +20,22 @@
 
     <!-- 標籤切換鈕 -->
     <div class="row">
-      <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g1">
+      <div class="col-6 col-md-4 col-lg-2 p-2 text-center round_top_1" id="g1">
         <img class="img-fluid pointer" src="/images/textbook/g1.svg" alt="一年級" onclick="gradeClick(1)">
       </div>
-      <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g2">
+      <div class="col-6 col-md-4 col-lg-2 p-2 text-center round_top_1" id="g2">
         <img class="img-fluid pointer" src="/images/textbook/g2.svg" alt="二年級" onclick="gradeClick(2)">
       </div>
-      <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g3">
+      <div class="col-6 col-md-4 col-lg-2 p-2 text-center round_top_1" id="g3">
         <img class="img-fluid pointer" src="/images/textbook/g3.svg" alt="三年級" onclick="gradeClick(3)">
       </div>
-      <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g4">
+      <div class="col-6 col-md-4 col-lg-2 p-2 text-center round_top_1" id="g4">
         <img class="img-fluid pointer" src="/images/textbook/g4.svg" alt="四年級" onclick="gradeClick(4)">
       </div>
-      <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g5">
+      <div class="col-6 col-md-4 col-lg-2 p-2 text-center round_top_1" id="g5">
         <img class="img-fluid pointer" src="/images/textbook/g5.svg" alt="五年級" onclick="gradeClick(5)">
       </div>
-      <div class="col-6 col-md-4 col-lg-2 p-2 text-center" id="g6">
+      <div class="col-6 col-md-4 col-lg-2 p-2 text-center round_top_1" id="g6">
         <img class="img-fluid pointer" src="/images/textbook/g6.svg" alt="六年級" onclick="gradeClick(6)">
       </div>
     </div>
@@ -46,8 +46,8 @@
     </div> -->
 
     <!-- 課次選單 -->
-    <div class="row bg_white">
-      <div class="py-3 px-3 px-lg-5 show active">
+    <div class="row bg_light round_bottom_1">
+      <div class="py-3 px-3 px-lg-5">
         <!-- 播放器 -->
         <div class="row justify-content-center my-3">
           <audio id="audio1" src="" controls></audio>
@@ -101,9 +101,9 @@
   function gradeClick(g) {
     curGrade = g;
     for (let i = 1; i <= 6; i++) {
-      $('#g' + i).removeClass('bg_white');
+      $('#g' + i).removeClass('bg_light');
     };
-    $('#g' + g).addClass('bg_white');
+    $('#g' + g).addClass('bg_light');
     newList();
     endMp3();
   }

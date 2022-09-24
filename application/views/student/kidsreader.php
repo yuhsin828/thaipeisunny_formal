@@ -24,8 +24,8 @@
         </div> -->
 
         <!-- 課次選單 -->
-        <div class="row bg_white">
-            <div class="py-3 px-3 px-lg-5 show active">
+        <div class="row bg_light round_1">
+            <div class="py-3 px-3 px-lg-5">
                 <!-- 播放器 -->
                 <div class="row justify-content-center my-3">
                     <audio id="audio1" src="" controls></audio>

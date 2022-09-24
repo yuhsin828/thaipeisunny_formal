@@ -92,10 +92,10 @@
       <div class="mb-3">
         <h3 class="text-center fw-bolder">熱門推薦</h3>
       </div>
-      <div class="p-3 owl-carousel owl-theme bg_lemonYellow round_20">
+      <div class="p-3 owl-carousel owl-theme bg_lemonYellow round_1">
         <!-- huayu -->
         <div class="item">
-          <div class="card round_20">
+          <div class="card round_1">
             <img class="card-img-top" src="/images/home/not yet.png" alt="生活華語">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">生活華語</h5>
@@ -110,7 +110,7 @@
         </div>
         <!-- holiday -->
         <div class="item">
-          <div class="card round_20">
+          <div class="card round_1">
             <img class="card-img-top" src="/images/home/not yet.png" alt="中華節慶">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">中華節慶</h5>
@@ -125,7 +125,7 @@
         </div>
         <!-- story -->
         <div class="item">
-          <div class="card round_20">
+          <div class="card round_1">
             <img class="card-img-top" src="/images/home/not yet.png" alt="小泰陽故事集">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">小泰陽故事集</h5>
