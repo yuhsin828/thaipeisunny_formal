@@ -28,11 +28,11 @@
             <div class="py-3 px-3 px-lg-5">
                 <!-- 播放器 -->
                 <div class="row justify-content-center my-3">
-                    <audio id="audio1" src="" controls></audio>
+                    <audio id="audio1" src="/wav/kidsreader/1_L1-6.wav" controls></audio>
                 </div>
 
                 <div class="d-flex justify-content-center flex-wrap gap-3 mt-5 mb-3">
-                    <div class="bg_lightPink round_1 box_shadow_2 pointer" id="btn1" onclick="lessonClick(1,1,6,1)">
+                    <div class="bg_pink round_1 box_shadow_2 pointer" id="btn1" onclick="lessonClick(1,1,6,1)">
                         <img class="img-fluid" src="/images/kidsreader/上冊L1-6.svg" alt="上冊 第1~6課">
                     </div>
                     <div class="bg_lightPink round_1 box_shadow_2 pointer" id="btn2" onclick="lessonClick(1,7,12,2)">
@@ -65,6 +65,7 @@
 
 
 <script>
+    // 每切換課次，復原所有課次按鈕的背景顏色，設定此課次按鈕的背景顏色；呼叫 播放音檔
     function lessonClick(semester, start, end, btn) {
         for (let i = 1; i <= 5; i++) {
             $('#btn' + i).removeClass('bg_pink');
@@ -75,6 +76,7 @@
         playMp3(semester, start, end, btn);
     }
 
+    // 每切換課次，加入音檔來源並自動播放
     function playMp3(semester, start, end, btn) {
         $('#audio1').attr("autoplay", "");
         $('#audio1').attr("src", '/wav/kidsreader/' + semester + '_' + 'L' + start + '-' + end + '.wav');

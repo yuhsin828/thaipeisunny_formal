@@ -22,8 +22,12 @@
       <!-- 注音列表 -->
       <div class="col-lg-4 my-3">
         <div class="d-flex flex-wrap justify-content-start gap-3">
-          <?php foreach ($viewClass1->result() as $row) {
-            echo '<img class="img-fluid bg_lightPink round_50 box_shadow_2 pointer" id="' . $row->zhuyin_id2 . '" src="/images/zhuyin/' . $row->zhuyin_id2 . '" alt="' . $row->zhuyin_id2 . '" onclick="letterClick(\'' . $row->zhuyin_id2 . '\')">';
+          <?php for ($i = 1; $i <= 37; $i++) {
+            if ($i < 10) {
+              echo '<img class="img-fluid bg_lightPink round_50 box_shadow_2 pointer" id="0' . $i . '" src="/images/zhuyin/0' . $i . '" alt="0' . $i . '" onclick="letterClick(\'0' . $i . '\')">';
+            } else {
+              echo '<img class="img-fluid bg_lightPink round_50 box_shadow_2 pointer" id="' . $i . '" src="/images/zhuyin/' . $i . '" alt="' . $i . '" onclick="letterClick(\'' . $i . '\')">';
+            }
           }
           ?>
         </div>
@@ -68,6 +72,7 @@
   let voice = 0;
   letterClick('01');
 
+  // 每切換符號，呼叫 復原符號按鈕、復原右邊選單、秀出主圖，設定此符號按鈕的背景顏色（預設一進來是ㄅ）
   function letterClick(id2) {
     letter = id2;
     clearList();
@@ -82,13 +87,9 @@
     } else {
       $('#' + id2).removeClass('bg_lightBlue').addClass('bg_blue');
     }
-
-    const item = $('#zhuyinMain').offset().top - $('.navbar').innerHeight();
-    $('html,body').animate({
-      scrollTop: item
-    }, 200);
   }
 
+  // 每切換符號，復原所有符號按鈕的背景顏色
   function clearList() {
     let target = '';
     for (let i = 1; i <= 37; i++) {
@@ -108,31 +109,18 @@
     }
   }
 
+  // 每切換符號，秀出主圖，畫面自動滑動到主圖（預設一進來是ㄅ）
   function showPic(id2) {
     $('#mainPic').attr("src", '/images/zhuyin/mainPic/A_' + id2 + '_a.jpg');
+
+    const item = $('#zhuyinMain').offset().top - $('.navbar').innerHeight();
+    $('html,body').animate({
+      scrollTop: item
+    }, 200);
   }
 
-  function changeMainPic(n) {
-    clearRight(n);
-
-    let imgType;
-    switch (n) {
-      case "a":
-        imgType = '.jpg';
-        break;
-      case "b":
-        imgType = '.gif';
-        break;
-      case "c":
-        imgType = '.svg';
-        break;
-      default:
-        imgType = '.jpg';
-        break;
-    }
-    $('#mainPic').attr("src", '/images/zhuyin/mainPic/A_' + letter + '_' + n + imgType);
-  }
-
+  // 每切換符號，或每切換右邊選項，復原右邊所有選項按鈕的背景顏色
+  // 判斷是注音/筆順/圖卡，記錄voice和btn，設定此選項按鈕的背景顏色（預設是注音）
   function clearRight(n) {
     $('#btn_zhuyin').removeClass('bg_orange');
     $('#btn_write').removeClass('bg_orange');
@@ -163,9 +151,33 @@
     $('#' + btn).addClass('bg_orange');
   }
 
+  // 每切換右邊選項，呼叫 復原右邊選單，判斷是注音/筆順/圖卡，秀出此主圖（預設是注音）
+  function changeMainPic(n) {
+    clearRight(n);
+
+    let imgType;
+    switch (n) {
+      case "a":
+        imgType = '.jpg';
+        break;
+      case "b":
+        imgType = '.gif';
+        break;
+      case "c":
+        imgType = '.svg';
+        break;
+      default:
+        imgType = '.jpg';
+        break;
+    }
+    $('#mainPic').attr("src", '/images/zhuyin/mainPic/A_' + letter + '_' + n + imgType);
+  }
+
+  //每切換音檔，復原兩個音檔按鈕的背景顏色，設定此音檔按鈕的背景顏色，判斷是（voice 注音/圖卡、n 男/女）哪個音檔
   function playMp3(n) {
     $('#play1').removeClass('bg_orange');
     $('#play2').removeClass('bg_orange');
+    $('#play' + n).addClass('bg_orange');
 
     $('#audio' + n).attr("autoplay", "");
     if (parseInt(n) + voice == 1) {
@@ -177,6 +189,5 @@
     } else if (parseInt(n) + voice == 3) {
       $('#audio' + n).attr("src", '/images/zhuyin/audio/A_' + letter + '_w_c.mp3');
     }
-    $('#play' + n).addClass('bg_orange');
   }
 </script>

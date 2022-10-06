@@ -3,258 +3,221 @@
 
 <?php $this->load->view("common/header.php"); ?>
 
-<div class="ftco-blocks-cover-1">
-  <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
-  <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('/images/學生學習區.JPG')">
-    <div class="container">
-      <div class="row align-items-center ">
-
-        <div class="col-md-5 mt-5 pt-5">
-          <span class="text-cursive h5 text-red">Welcome To Our Thaipei Sunny</span>
-          <h1 class="text-cursive h5 text-teal">中華節慶</h1>
-          <p><a href="/home"><span class="text-cursive text-white">首頁</span></a>
-            /<span class="mx-3"><a href="/student"><span class="text-cursive text-white">學生學習區</span></a>
-              /<span class="text-cursive text-white mx-3">中華節慶</span></p>
-        </div>
-
-      </div>
+<main class="bg_lemonYellow">
+  <div class="container py-5">
+    <!-- breadcrumb -->
+    <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb d-flex align-items-center">
+        <li class="breadcrumb-item">
+          <a class="text-decoration-none text_dark" href="/home">首頁</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a class="text-decoration-none text_dark" href="/student">學生學習區</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a class="text-decoration-none text_dark" href="/student/holiday">中華節慶</a>
+        </li>
+        <li class="breadcrumb-item text_dark active" aria-current="page"><?php echo $main; ?></li>
+      </ol>
     </div>
-  </div>
-</div>
 
-<div class="site-section" style="background-color: #d99694">
-
-
-
-
-  <div class="container">
-    <div class="row align-items-stretch">
-      <div class="col-lg-1 float-right" style="position:relative;margin-right:  -30px;margin-top: 15px;height: auto;width: 95px">
-        <a href="/student/holiday"><img src="/images/student/4_返回目錄.png" alt="Image" class="card-img-top  float-end"> </a>
+    <div class="bg_light round_1" id="mainContent">
+      <!-- 簡介 -->
+      <div class="d-md-flex justify-content-evenly px-3 py-5 px-md-5 gap-3" id="item1">
+        <div class="text-center">
+          <div class="title_ctrl">
+            <img class="img-fluid" src="/images/holiday/<?php echo $main_title; ?>" alt="">
+          </div>
+          <div class="pic_ctrl my-2">
+            <img class="img-fluid" src="/images/holiday/<?php echo $main_img; ?>" alt="">
+          </div>
+          <div class="src_ctrl">
+            <div class="text_dark fs_s">圖片來源：https://www.irasutoya.com/</div>
+          </div>
+        </div>
+        <div class="text-center d-flex flex-column">
+          <div class="d-flex justify-content-center my-3">
+            <audio class="" src="/wav/holiday/<?php echo $main_audio; ?>.wav" controls></audio>
+          </div>
+          <div class="m-auto content_ctrl">
+            <picture>
+              <source class="img-fluid" srcset="/images/holiday/<?php echo $main_content; ?>.svg" media="(min-width: 425px)">
+              <img class="img-fluid" src="/images/holiday/<?php echo $main_content; ?>m.svg" alt="">
+            </picture>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-11 float-left">
 
-        <div class="shadow-lg card" style="border-radius:25px;border:0px solid #000000;padding: 20px; background: #f2f2f2;">
-          <!-----簡介開始---->
-          <div id="unit1" style="display: none;">
-            <div class="card-body">
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="row">
-                    <div class="col-8 offset-md-2">
-                      <?php echo $main; ?>
-                      <img src="/images/holiday/<?php echo $main_title; ?>" alt="Image" class="img-fluid"" id=" main_pic">
+      <!-- 習俗 -->
+      <div class="position-relative px-2 py-5 px-md-5 gap-1 item_hide" id="item2">
+        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
+
+          <div class="carousel-indicators">
+            <?php for ($i = 0; $i < count($customs_title); $i++) { ?>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="<?php echo $i ?>" class="<?php if ($i == '0') echo 'active'; ?>" aria-current="true" aria-label="Slide <?php echo $i + 1; ?>"></button>
+            <?php } ?>
+          </div>
+          <div class="carousel-inner">
+            <?php for ($i = 0; $i < count($customs_title); $i++) { ?>
+              <div class="carousel-item <?php if ($i == '0') echo 'active'; ?>">
+                <div class="d-md-flex justify-content-evenly gap-3">
+                  <div class="text-center">
+                    <div class="title_ctrl">
+                      <img class="img-fluid" src="/images/holiday/<?php echo $customs_title[$i]; ?>" alt="">
                     </div>
-
-                    <div class="col-2  col-sm-2">
-                      <img src="/images/student/4_播放按鍵.svg" alt="Image" id="speaker" class="mb-4 mx-4" onclick="playMp3('<?php echo $main_audio; ?>');">
-                    </div>
-
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-10 offset-md-2">
-                      <img src="/images/holiday/<?php echo $main_img; ?>" alt="Image" class="img-fluid rounded float-start" id="main_pic">
+                    <div class="pic_ctrl">
+                      <img class="img-fluid" src="/images/holiday/<?php echo $customs_img[$i]; ?>" alt="">
                     </div>
                   </div>
-                </div>
-
-                <div class="col-lg-6 align-items-center">
-                  <div>
-                    <p><img src="/images/holiday/<?php echo $main_content; ?>" alt="Image" id="desc_pic" class="img-fluid"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-----簡介結束---->
-
-          <!------習俗開始------->
-          <div id="unit2" style="display: none;">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="height: 40vh;min-height:650px">
-              <div class="carousel-inner">
-                <?php for ($i = 0; $i < count($customs_title); $i++) { ?>
-                  <div class="carousel-item<?php if ($i == '0') echo ' active'; ?>">
-                    <div>
-                      <div class="row align-items-center">
-                        <div class="col-2 col-sm-2">
-                        </div>
-                        <div class="col-12  col-sm-8">
-                          <img src="/images/holiday/<?php echo $customs_title[$i]; ?>" alt="Image" class="img-fluid rounded float-start">
-                        </div>
-                        <div class="col-2  col-sm-2">
-                          <img src="/images/student/4_播放按鍵.svg" alt="Image" id="speaker" class="mb-4" onclick="playMp3('<?php echo $customs_audio[$i]; ?>');">
-                        </div>
-                      </div>
-                      <div class="row  align-items-center align-top">
-                        <div class="col-2  col-sm-1 align-top">
-                          <a href="#carouselExampleControls" role="button" data-slide="prev">
-                            <img src="/images/holiday/4_往左.png" alt="Image" style="height: 80%;width: 80%">
-                          </a>
-                        </div>
-                        <div class="col-12  col-sm-5 align-top">
-                          <img src="/images/holiday/<?php echo $customs_img[$i]; ?>" alt="Image" class="img-fluid rounded align-top">
-                        </div>
-                        <div class="col-12  col-sm-5 align-top">
-                          <img src="/images/holiday/<?php echo $customs_content[$i]; ?>" alt="Image" class="img-fluid">
-
-                        </div>
-                        <div class="col-2  col-sm-1 align-top">
-                          <a href="#carouselExampleControls" role="button" data-slide="next" style="height: 50%">
-                            <img src="/images/holiday/4_往右.png" alt="Image" style="height: 80%;width: 80%">
-                          </a>
-                        </div>
-
-                      </div>
+                  <div class="text-center d-flex flex-column">
+                    <div class="d-flex justify-content-center my-3">
+                      <audio class="" src="/wav/holiday/<?php echo $customs_audio[$i]; ?>.wav" controls></audio>
+                    </div>
+                    <div class="m-auto content_ctrl">
+                      <picture>
+                        <source class="img-fluid" srcset="/images/holiday/<?php echo $customs_content[$i]; ?>.svg" media="(min-width: 425px)">
+                        <img class="img-fluid" src="/images/holiday/<?php echo $customs_content[$i]; ?>m.svg" alt="">
+                      </picture>
                     </div>
                   </div>
-                <?php  } ?>
-              </div>
-
-            </div>
-          </div>
-
-          <!------習俗結束------>
-
-          <!-----故事開始---->
-          <div id="unit3" style="display: none;">
-            <div class="card-body">
-              <div class="row align-items-center">
-                <div class="col-lg-2">
-                </div>
-                <div class="col-lg-8">
-                  <img src="/images/holiday/<?php echo $story_title; ?>" alt="Image" class="img-fluid rounded float-start">
-                </div>
-                <div class="col-lg-2">
                 </div>
               </div>
-              <?php if ($story_youtube != "") { ?>
-                <div class="row justify-content-center">
-                  <div class="col-12 col-lg-12">
-                    <iframe id="iFrameID" width="900" height="500" src="https://www.youtube.com/embed/<?php echo $story_youtube; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-              <?php } ?>
-              <div class="row justify-content-center">
-                <div class="col-lg-12">
-                  <?php if ($story_audio != "") { ?>
-                    <img src="/images/student/4_播放按鍵.svg" alt="Image" id="speaker" onclick="playMp3('<?php echo $story_audio; ?>');">
-
-                    <img src="/images/holiday/<?php echo $story_content; ?>" alt="Image" id="story" class="img-fluid rounded float-start">
-                  <?php } else { ?>
-                    <img src="/images/holiday/<?php echo $story_content; ?>" alt="Image" id="story1" class="img-fluid rounded float-start">
-                  <?php }  ?>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <!-----故事結束---->
-
-
-          <!-----遊戲開始---->
-          <div id="unit4" style="display: none;">
-
-            <div class="row justify-content-center">
-              <div class="col-12 col-lg-12">
-                <div class="card-body  justify-content-center">
-                  <?php if ($game_scratch != "") { ?>
-                    <iframe src="https://scratch.mit.edu/projects/<?php echo $game_scratch; ?>/embed" allowtransparency="true" width="920" height="796" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                  <?php } ?>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-----遊戲結束---->
-
-          <div class="card-footer" style="background: #f2f2f2;border: 0">
-            <div class="row justify-content-md-center">
-              <div class="col-6 col-sm-2 align-top">
-                <img src="/images/holiday/4_簡介1.png" alt="Image" class="img-fluid rounded float-start" id="b1" onclick="show('1','4_簡介')">
-              </div>
-              <div class="col-6 col-sm-2 align-top">
-                <img src="/images/holiday/4_習俗1.png" alt="Image" class="img-fluid rounded float-start" id="b2" onclick="show('2','4_習俗')">
-              </div>
-              <div class="col-6 col-sm-2 align-top">
-                <img src="/images/holiday/4_故事1.png" alt="Image" class="img-fluid rounded float-start" id="b3" onclick="show('3','4_故事')">
-              </div>
-              <div class="col-6 col-sm-2 align-top">
-                <img src="/images/holiday/4_遊戲1.png" alt="Image" class="img-fluid rounded float-start" id="b4" onclick="show('4','4_遊戲')">
-              </div>
-            </div>
-
+            <?php } ?>
           </div>
         </div>
 
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+          <img class="img-fluid carousel-control-prev-icon" aria-hidden="true" src="/images/holiday/4_往左.svg" onclick="stopMp3()">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+          <img class="img-fluid carousel-control-next-icon" aria-hidden="true" src="/images/holiday/4_往右.svg" onclick="stopMp3()">
+        </button>
       </div>
 
+      <!-- 故事 -->
+      <div class="text-center px-3 py-5 px-md-5 item_hide" id="item3">
+        <div class="title_ctrl mb-3">
+          <img class="img-fluid" src="/images/holiday/<?php echo $story_title; ?>" alt="">
+        </div>
+        <div class="video_ctrl">
+          <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+          <audio class="" src="/wav/holiday/<?php echo $story_audio; ?>.wav" controls></audio>
+        </div>
+        <div class="content_ctrl">
+          <picture>
+            <source class="img-fluid" srcset="/images/holiday/<?php echo $story_content; ?>.svg" media="(min-width: 768px)">
+            <source class="img-fluid" srcset="/images/holiday/<?php echo $story_content; ?>t.svg" media="(min-width: 425px)">
+            <img class="img-fluid" src="/images/holiday/<?php echo $story_content; ?>m.svg" alt="">
+          </picture>
+        </div>
+      </div>
+
+      <!-- 遊戲 -->
+      <div class="text-center px-3 py-5 px-md-5 item_hide" id="item4">
+        <div class="title_ctrl mb-3">
+          <img class="img-fluid" src="/images/holiday/<?php echo $game_title; ?>" alt="">
+        </div>
+        <div class="scratch_ctrl">
+          <iframe id="scratchPlayer" src="" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- 按鈕 -->
+      <div class="row px-3 pb-5 pt-3 px-md-5">
+        <div class="col-6 col-md-3 text-center mb-3">
+          <img class="img-fluid bg_blue round_1 box_shadow_2 pointer" id="btn1" src="/images/holiday/4_簡介.svg" alt="簡介" onclick="changeItem(1)">
+        </div>
+        <div class="col-6 col-md-3 text-center mb-3">
+          <img class="img-fluid bg_lightBlue round_1 box_shadow_2 pointer" id="btn2" src="/images/holiday/4_習俗.svg" alt="習俗" onclick="changeItem(2)">
+        </div>
+        <div class="col-6 col-md-3 text-center mb-3">
+          <img class="img-fluid bg_lightBlue round_1 box_shadow_2 pointer" id="btn3" src="/images/holiday/4_故事.svg" alt="故事" onclick="changeItem(3,'<?php echo $story_youtube; ?>')">
+        </div>
+        <div class="col-6 col-md-3 text-center mb-3">
+          <img class="img-fluid bg_lightBlue round_1 box_shadow_2 pointer" id="btn4" src="/images/holiday/4_遊戲.svg" alt="遊戲" onclick="changeItem(4, '<?php echo $game_scratch; ?>')">
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <a class="text-center" href="/student/holiday">
+        <img class="img-fluid bg_gold round_1 box_shadow_2 pointer" src="/images/holiday/4_返回目錄.svg" alt="返回目錄">
+      </a>
     </div>
   </div>
-
-  <br />
-</div>
-<audio id="audio1" src="">
-</audio>
-<audio id="audio2" src="">
-</audio>
-
+</main>
 
 <?php $this->load->view("common/footer.php"); ?>
-
 
 </body>
 
 </html>
 
+
+
 <script>
-  $('.carousel').carousel({
-    interval: 200000
-  })
-  //var currentImg="<?php echo $story_audio; ?>";
-  $('#audio1').attr("autoplay", "");
-  show(1, '4_簡介');
+  let prevI = 1;
+  let curI = 1;
+  // let prevCustom = 0;
 
-  function clearAll() {
-    $("#b1").attr("src", '/images/holiday/4_簡介1.png');
-    $("#b2").attr("src", '/images/holiday/4_習俗1.png');
-    $("#b3").attr("src", '/images/holiday/4_故事1.png');
-    $("#b4").attr("src", '/images/holiday/4_遊戲1.png');
-    $("#unit1").hide();
-    $("#unit2").hide();
-    $("#unit3").hide();
-    $("#unit4").hide();
+  $('#topNav').removeClass('sticky-top');
+
+  function changeItem(i, iframeId) {
+    curI = i;
+
+    // 每切換選項，復原前一個選項按鈕的背景顏色、隱藏內容
+    $('#btn' + prevI).removeClass('bg_blue').addClass('bg_lightBlue');
+    $('#item' + prevI).addClass('item_hide');
+
+    $('#btn' + i).removeClass('bg_lightBlue').addClass('bg_blue');
+    $('#item' + i).removeClass('item_hide');
+
+    // 設定此選項按鈕的背景顏色、秀出來，並自動滑動到上面
+    const item = $('#mainContent').offset().top;
+    $('html,body').animate({
+      scrollTop: item
+    }, 200);
+
+    // 呼叫 停止播放音檔
+    stopMp3();
+
+    // 如果前一個選項是故事或遊戲，把來源移除強制結束
+    if (prevI == 3) {
+      $('#videoPlayer').attr('src', '');
+    } else if (prevI == 4) {
+      $('#scratchPlayer').attr('src', '');
+    }
+
+    // 如果現在的選項是故事或遊戲，加入來源
+    if (i == 3) {
+      $('#videoPlayer').attr('src', 'https://www.youtube.com/embed/' + iframeId);
+    } else if (i == 4) {
+      $('#scratchPlayer').attr('src', 'https://scratch.mit.edu/projects/' + iframeId + '/embed');
+    }
+
+    prevI = i; // 更新前一個選項編號
   }
 
-  function show(id, img) {
-    clearAll();
-    $("#b" + id).attr("src", '/images/holiday/' + img + '2.png');
-    $("#unit" + id).show();
-    $('#audio1').attr("src", '');
-  }
+  // 滑動切換習俗時， 停止播放音檔
+  // $(window).scroll(function() {
+  //   if (curI == 2) {
+  //     let curCustom = $('.carousel-indicators .active').attr('data-bs-slide-to');
+  //     // console.log(curCustom);
+  //     if (curCustom !== prevCustom) {
+  //       stopMp3();
+  //       // console.log(prevCustom);
+  //       prevCustom = curCustom;
+  //     }
+  //   }
+  // })
 
-  function playMp3(video) {
-    $('#audio1').attr("src", '/images/holiday/wav/' + video + '.wav');
+  // 每切換選項，停止播放音檔
+  function stopMp3() {
+    $('audio').each(function() {
+      this.pause(); // Stop playing
+      this.currentTime = 0; // Reset time
+    });
   }
 </script>
-
-<style>
-  #infoDiv {
-    margin-top: 25px;
-  }
-
-  #speaker {
-    width: 50px;
-    height: 50px;
-    float: right;
-    position: relative;
-    margin-top: 15px;
-    margin-right: 100px;
-    z-index: 200;
-    cursor: pointer;
-  }
-
-  #story {
-    margin-top: -60px;
-    z-index: 2;
-  }
-</style>

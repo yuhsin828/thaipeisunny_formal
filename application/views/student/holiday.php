@@ -65,7 +65,6 @@
 
 <?php $this->load->view("common/footer.php"); ?>
 
-
 </body>
 
 </html>

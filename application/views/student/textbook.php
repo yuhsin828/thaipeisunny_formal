@@ -98,48 +98,58 @@
 
   gradeClick(curGrade);
 
+  // 每切換年級，更改年級按鈕的背景顏色（預設一進來是1年級）；呼叫 結束音檔播放、復原課次按鈕
   function gradeClick(g) {
     curGrade = g;
     for (let i = 1; i <= 6; i++) {
       $('#g' + i).removeClass('bg_light');
     };
     $('#g' + g).addClass('bg_light');
-    newList();
     endMp3();
+    newList();
   }
 
+  // 每切換年級，復原所有課次按鈕的背景顏色；呼叫 預設第一課
   function newList() {
     for (let i = 1; i <= 15; i++) {
-      $('#S1L' + i).removeClass('bg_pink');
-      $('#S1L' + i).addClass('bg_lightPink');
-      $('#S2L' + i).removeClass('bg_pink');
-      $('#S2L' + i).addClass('bg_lightPink');
-      $('#S2L15').removeClass('btn_disable').addClass('pointer box_shadow_2');
-      if (curGrade == 6) {
-        $('#S2L15').addClass('btn_disable').removeClass('pointer box_shadow_2');
-      }
+      $('#S1L' + i).removeClass('bg_pink').addClass('bg_lightPink');
+      $('#S2L' + i).removeClass('bg_pink').addClass('bg_lightPink');
     };
+
+    $('#S2L15').removeClass('btn_disable').addClass('pointer box_shadow_2');
+    if (curGrade == 6) {
+      $('#S2L15').addClass('btn_disable').removeClass('pointer box_shadow_2');
+    }
+    defaultLesson();
   }
 
+  // 每切換年級，預設第一課按鈕的背景顏色、取消自動播放音檔、加入音檔
+  function defaultLesson() {
+    $('#S1L1').removeClass('bg_lightPink').addClass('bg_pink');
+    $('#audio1').removeAttr("autoplay");
+    $('#audio1').attr("src", '/wav/textbook/' + curGrade + '_1' + '_' + 'L1' + '.wav');
+  }
+
+  // 每切換課次，復原所有課次按鈕的背景顏色、設定此課次按鈕的背景顏色；呼叫 播放音檔
   function lessonClick(S, L) {
     curSemester = S;
     curLesson = L;
     for (let i = 1; i <= 15; i++) {
-      $('#S1L' + i).removeClass('bg_pink');
-      $('#S1L' + i).addClass('bg_lightPink');
-      $('#S2L' + i).removeClass('bg_pink');
-      $('#S2L' + i).addClass('bg_lightPink');
+      $('#S1L' + i).removeClass('bg_pink').addClass('bg_lightPink');
+      $('#S2L' + i).removeClass('bg_pink').addClass('bg_lightPink');
     };
     $('#S' + S + 'L' + L).removeClass('bg_lightPink').addClass('bg_pink');
 
     playMp3();
   }
 
+  // 每切換課次，加入音檔並自動播放
   function playMp3() {
     $('#audio1').attr("autoplay", "");
     $('#audio1').attr("src", '/wav/textbook/' + curGrade + '_' + curSemester + '_' + 'L' + curLesson + '.wav');
   }
 
+  // 每切換年級，強制結束音檔播放
   function endMp3() {
     $('#audio1').attr("src", "");
   }

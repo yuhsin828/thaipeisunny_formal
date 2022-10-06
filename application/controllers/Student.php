@@ -72,180 +72,201 @@ class Student extends CI_Controller
       // $this->load->model('Student_Model');
 
       switch ($id) {
-         case "1":  //春節
+         case "1": //春節
             //簡介
             $data['main'] = '春節';
-            $data['main_title'] = '4_1_a_1.png';
-            $data['main_img'] = '4_1_a_2.JPG';
-            $data['main_content'] = '4_1_a_3.png';
+            $data['main_title'] = '4_1_a_1.svg';
+            $data['main_img'] = '4_1_a_2.png';
+            $data['main_content'] = '4_1_a_3';
             $data['main_audio'] = '4_1_a_4';
             //習俗
-            $data['customs_title'] = array("4_1_b1_1.png", "4_1_b2_1.png", "4_1_b3_1.png", "4_1_b4_1.png", "4_1_b5_1.png");
-            $data['customs_img'] = array("4_1_b1_2.JPG", "4_1_b2_2.JPG", "4_1_b3_2.JPG", "4_1_b4_2.JPG", "4_1_b5_2.JPG");
-            $data['customs_content'] = array("4_1_b1_3.png", "4_1_b2_3.png", "4_1_b3_3.png", "4_1_b4_3.png", "4_1_b5_3.png");
+            $data['customs_title'] = array("4_1_b1_1.svg", "4_1_b2_1.svg", "4_1_b3_1.svg", "4_1_b4_1.svg", "4_1_b5_1.svg");
+            $data['customs_img'] = array("4_1_b1_2.png", "4_1_b2_2.png", "4_1_b3_2.png", "4_1_b4_2.png", "4_1_b5_2.png");
+            $data['customs_content'] = array("4_1_b1_3", "4_1_b2_3", "4_1_b3_3", "4_1_b4_3", "4_1_b5_3");
             $data['customs_audio'] = array("4_1_b1_4", "4_1_b2_4", "4_1_b3_4", "4_1_b4_4", "4_1_b5_4");
             //故事
-            $data['story_title'] = "4_1_c_1.png";
+            $data['story_title'] = "4_1_c_1.svg";
             $data['story_youtube'] = "jvqaz6LD4lQ";
-            $data['story_content'] = "4_1_c_3.png";
+            $data['story_content'] = "4_1_c_3";
             $data['story_audio'] = "4_1_c_4";
             //遊戲
+            $data['game_title'] = "4_1_d_1.svg";
             $data['game_scratch'] = "629840733";
             break;
-         case "2":  //元宵
+
+         case "2": //元宵
             //簡介
             $data['main'] = '元宵節';
-            $data['main_title'] = '4_2_a_1.png';
-            $data['main_img'] = '4_2_a_2.JPG';
-            $data['main_content'] = '4_2_a_3.png';
+            $data['main_title'] = '4_2_a_1.svg';
+            $data['main_img'] = '4_2_a_2.png';
+            $data['main_content'] = '4_2_a_3';
             $data['main_audio'] = '4_2_a_4';
             //習俗
-            $data['customs_title'] = array("4_2_b1_1.png", "4_2_b2_1.png", "4_2_b3_1.png");
-            $data['customs_img'] = array("4_2_b1_2.JPG", "4_2_b2_2.JPG", "4_2_b3_2.JPG",);
-            $data['customs_content'] = array("4_2_b1_3.png", "4_2_b2_3.png", "4_2_b3_3.png");
+            $data['customs_title'] = array("4_2_b1_1.svg", "4_2_b2_1.svg", "4_2_b3_1.svg");
+            $data['customs_img'] = array("4_2_b1_2.png", "4_2_b2_2.png", "4_2_b3_2.png",);
+            $data['customs_content'] = array("4_2_b1_3", "4_2_b2_3", "4_2_b3_3");
             $data['customs_audio'] = array("4_2_b1_4", "4_2_b2_4", "4_2_b3_4");
             //故事
-            $data['story_title'] = "4_2_c_1.png";
+            $data['story_title'] = "4_2_c_1.svg";
             $data['story_youtube'] = "";
-            $data['story_content'] = "4_2_c_3.png";
+            $data['story_content'] = "4_2_c_3";
             $data['story_audio'] = "4_2_c_4";
             //遊戲
-            $data['game_scratch'] = "";
+            $data['game_title'] = "4_2_d_1.svg";
+            $data['game_scratch'] = "640635244";
             break;
+
          case "3": //清明節
             //簡介
-            $data['main_title'] = '4_3_a_1.png';
-            $data['main_img'] = '4_3_a_2.JPG';
-            $data['main_content'] = '4_3_a_3.png';
+            $data['main'] = '清明節';
+            $data['main_title'] = '4_3_a_1.svg';
+            $data['main_img'] = '4_3_a_2.png';
+            $data['main_content'] = '4_3_a_3';
             $data['main_audio'] = '4_3_a_4';
             //習俗
-            $data['customs_title'] = array("4_3_b1_1.png", "4_3_b2_1.png", "4_3_b3_1.png");
-            $data['customs_img'] = array("4_3_b1_2.JPG", "4_3_b2_2.JPG", "4_3_b3_2.JPG");
-            $data['customs_content'] = array("4_3_b1_3.png", "4_3_b2_3.png", "4_3_b3_3.png");
+            $data['customs_title'] = array("4_3_b1_1.svg", "4_3_b2_1.svg", "4_3_b3_1.svg");
+            $data['customs_img'] = array("4_3_b1_2.png", "4_3_b2_2.png", "4_3_b3_2.png");
+            $data['customs_content'] = array("4_3_b1_3", "4_3_b2_3", "4_3_b3_3");
             $data['customs_audio'] = array("4_3_b1_4", "4_3_b2_4", "4_3_b3_4");
             //故事
-            $data['story_title'] = "4_3_c_1.png";
+            $data['story_title'] = "4_3_c_1.svg";
             $data['story_youtube'] = "";
-            $data['story_content'] = "4_3_c_3.png";
+            $data['story_content'] = "4_3_c_3";
             $data['story_audio'] = "4_3_c_4";
             //遊戲
+            $data['game_title'] = "4_3_d_1.svg";
             $data['game_scratch'] = "";
             break;
-         case "4":  //端年節
+
+         case "4": //端年節
             //簡介
-            $data['main_title'] = '4_4_a_1.png';
-            $data['main_img'] = '4_4_a_2.JPG';
-            $data['main_content'] = '4_4_a_3.png';
+            $data['main'] = '端午節';
+            $data['main_title'] = '4_4_a_1.svg';
+            $data['main_img'] = '4_4_a_2.png';
+            $data['main_content'] = '4_4_a_3';
             $data['main_audio'] = '4_4_a_4';
             //習俗
-            $data['customs_title'] = array("4_4_b1_1.png", "4_4_b2_1.png", "4_4_b3_1.png", "4_4_b4_1.png");
-            $data['customs_img'] = array("4_4_b1_2.JPG", "4_4_b2_2.JPG", "4_4_b3_2.JPG", "4_4_b4_2.JPG");
-            $data['customs_content'] = array("4_4_b1_3.png", "4_4_b2_3.png", "4_4_b3_3.png", "4_4_b4_3.png");
+            $data['customs_title'] = array("4_4_b1_1.svg", "4_4_b2_1.svg", "4_4_b3_1.svg", "4_4_b4_1.svg");
+            $data['customs_img'] = array("4_4_b1_2.png", "4_4_b2_2.png", "4_4_b3_2.png", "4_4_b4_2.png");
+            $data['customs_content'] = array("4_4_b1_3", "4_4_b2_3", "4_4_b3_3", "4_4_b4_3");
             $data['customs_audio'] = array("4_4_b1_4", "4_4_b2_4", "4_4_b3_4", "4_4_b4_4");
             //故事
-            $data['story_title'] = "4_4_c_1.png";
+            $data['story_title'] = "4_4_c_1.svg";
             $data['story_youtube'] = "";
-            $data['story_content'] = "4_4_c_3.png";
+            $data['story_content'] = "4_4_c_3";
             $data['story_audio'] = "4_4_c_4";
             //遊戲
+            $data['game_title'] = "4_4_d_1.svg";
             $data['game_scratch'] = "";
             break;
+
          case "5": //七夕
             //簡介
-            $data['main_title'] = '4_5_a_1.png';
-            $data['main_img'] = '4_5_a_2.JPG';
-            $data['main_content'] = '4_5_a_3.png';
+            $data['main'] = '七夕';
+            $data['main_title'] = '4_5_a_1.svg';
+            $data['main_img'] = '4_5_a_2.png';
+            $data['main_content'] = '4_5_a_3';
             $data['main_audio'] = '4_5_a_4';
             //習俗
-            $data['customs_title'] = array("4_5_b1_1.png", "4_5_b2_1.png");
-            $data['customs_img'] = array("4_5_b1_2.JPG", "4_5_b2_2.JPG");
-            $data['customs_content'] = array("4_5_b1_3.png", "4_5_b2_3.png");
+            $data['customs_title'] = array("4_5_b1_1.svg", "4_5_b2_1.svg");
+            $data['customs_img'] = array("4_5_b1_2.png", "4_5_b2_2.png");
+            $data['customs_content'] = array("4_5_b1_3", "4_5_b2_3");
             $data['customs_audio'] = array("4_5_b1_4", "4_5_b2_4");
             //故事
-            $data['story_title'] = "4_5_c_1.png";
+            $data['story_title'] = "4_5_c_1.svg";
             $data['story_youtube'] = "pEhSctvtItY";
-            $data['story_content'] = "4_5_c_3.png";
+            $data['story_content'] = "4_5_c_3";
             $data['story_audio'] = "4_5_c_4";
             //遊戲
+            $data['game_title'] = "4_5_d_1.svg";
             $data['game_scratch'] = "558149489";
             break;
+
          case "6": //中元節
             //簡介
-            $data['main_title'] = '4_6_a_1.png';
-            $data['main_img'] = '4_6_a_2.JPG';
-            $data['main_content'] = '4_6_a_3.png';
+            $data['main'] = '中元節';
+            $data['main_title'] = '4_6_a_1.svg';
+            $data['main_img'] = '4_6_a_2.png';
+            $data['main_content'] = '4_6_a_3';
             $data['main_audio'] = '4_6_a_4';
             //習俗
-            $data['customs_title'] = array("4_6_b1_1.png", "4_6_b2_1.png", "4_6_b3_1.png");
-            $data['customs_img'] = array("4_6_b1_2.JPG", "4_6_b2_2.JPG", "4_6_b3_2.JPG");
-            $data['customs_content'] = array("4_6_b1_3.png", "4_6_b2_3.png", "4_6_b3_3.png");
+            $data['customs_title'] = array("4_6_b1_1.svg", "4_6_b2_1.svg", "4_6_b3_1.svg");
+            $data['customs_img'] = array("4_6_b1_2.png", "4_6_b2_2.png", "4_6_b3_2.png");
+            $data['customs_content'] = array("4_6_b1_3", "4_6_b2_3", "4_6_b3_3");
             $data['customs_audio'] = array("4_6_b1_4", "4_6_b2_4", "4_6_b3_4");
             //故事
-            $data['story_title'] = "4_6_c_1.png";
+            $data['story_title'] = "4_6_c_1.svg";
             $data['story_youtube'] = "lZpxpxcc1Pg";
-            $data['story_content'] = "4_6_c_3.png";
+            $data['story_content'] = "4_6_c_3";
             $data['story_audio'] = "4_6_c_4";
             //遊戲
+            $data['game_title'] = "4_6_d_1.svg";
             $data['game_scratch'] = "561158055";
             break;
 
          case "7": //中秋節
             //簡介
-            $data['main_title'] = '4_7_a_1.png';
-            $data['main_img'] = '4_7_a_2.JPG';
-            $data['main_content'] = '4_7_a_3.png';
+            $data['main'] = '中秋節';
+            $data['main_title'] = '4_7_a_1.svg';
+            $data['main_img'] = '4_7_a_2.png';
+            $data['main_content'] = '4_7_a_3';
             $data['main_audio'] = '4_7_a_4';
             //習俗
-            $data['customs_title'] = array("4_7_b1_1.png", "4_7_b2_1.png", "4_7_b3_1.png");
-            $data['customs_img'] = array("4_7_b1_2.JPG", "4_7_b2_2.JPG", "4_7_b3_2.JPG");
-            $data['customs_content'] = array("4_7_b1_3.png", "4_7_b2_3.png", "4_7_b3_3.png");
+            $data['customs_title'] = array("4_7_b1_1.svg", "4_7_b2_1.svg", "4_7_b3_1.svg");
+            $data['customs_img'] = array("4_7_b1_2.png", "4_7_b2_2.png", "4_7_b3_2.png");
+            $data['customs_content'] = array("4_7_b1_3", "4_7_b2_3", "4_7_b3_3");
             $data['customs_audio'] = array("4_7_b1_4", "4_7_b2_4", "4_7_b3_4");
             //故事
-            $data['story_title'] = "4_7_c_1.png";
+            $data['story_title'] = "4_7_c_1.svg";
             $data['story_youtube'] = "8LEXaJeyejU";
-            $data['story_content'] = "4_7_c_3.png";
+            $data['story_content'] = "4_7_c_3";
             $data['story_audio'] = "4_7_c_4";
             //遊戲
+            $data['game_title'] = "4_7_d_1.svg";
             $data['game_scratch'] = "571077018";
             break;
 
          case "8": //重陽節
             //簡介
-            $data['main_title'] = '4_8_a_1.png';
-            $data['main_img'] = '4_8_a_2.JPG';
-            $data['main_content'] = '4_8_a_3.png';
+            $data['main'] = '重陽節';
+            $data['main_title'] = '4_8_a_1.svg';
+            $data['main_img'] = '4_8_a_2.png';
+            $data['main_content'] = '4_8_a_3';
             $data['main_audio'] = '4_8_a_4';
             //習俗
-            $data['customs_title'] = array("4_8_b1_1.png", "4_8_b2_1.png", "4_8_b3_1.png");
-            $data['customs_img'] = array("4_8_b1_2.JPG", "4_8_b2_2.JPG", "4_8_b3_2.JPG");
-            $data['customs_content'] = array("4_8_b1_3.png", "4_8_b2_3.png", "4_8_b3_3.png");
+            $data['customs_title'] = array("4_8_b1_1.svg", "4_8_b2_1.svg", "4_8_b3_1.svg");
+            $data['customs_img'] = array("4_8_b1_2.png", "4_8_b2_2.png", "4_8_b3_2.png");
+            $data['customs_content'] = array("4_8_b1_3", "4_8_b2_3", "4_8_b3_3");
             $data['customs_audio'] = array("4_8_b1_4", "4_8_b2_4", "4_8_b3_4");
             //故事
-            $data['story_title'] = "4_8_c_1.png";
+            $data['story_title'] = "4_8_c_1.svg";
             $data['story_youtube'] = "mim33WarSQc";
-            $data['story_content'] = "4_8_c_3.png";
+            $data['story_content'] = "4_8_c_3";
             $data['story_audio'] = "4_8_c_4";
             //遊戲
+            $data['game_title'] = "4_8_d_1.svg";
             $data['game_scratch'] = "577237303";
             break;
+
          default:
             //簡介
-            $data['main_title'] = '4_1_a_1.png';
-            $data['main_img'] = '4_1_a_2.JPG';
-            $data['main_content'] = '4_1_a_3.png';
+            $data['main_title'] = '4_1_a_1.svg';
+            $data['main_img'] = '4_1_a_2.png';
+            $data['main_content'] = '4_1_a_3';
             $data['main_audio'] = '4_1_a_4';
             //習俗
-            $data['customs_title'] = array("4_1_b1_1.png", "4_1_b2_1.png", "4_1_b3_1.png", "4_1_b4_1.png", "4_1_b5_1.png");
-            $data['customs_img'] = array("4_1_b1_2.JPG", "4_1_b2_2.JPG", "4_1_b3_2.JPG", "4_1_b4_2.JPG", "4_1_b5_2.JPG");
-            $data['customs_content'] = array("4_1_b1_3.png", "4_1_b2_3.png", "4_1_b3_3.png", "4_1_b4_3.png", "4_1_b5_3.png");
+            $data['customs_title'] = array("4_1_b1_1.svg", "4_1_b2_1.svg", "4_1_b3_1.svg", "4_1_b4_1.svg", "4_1_b5_1.svg");
+            $data['customs_img'] = array("4_1_b1_2.png", "4_1_b2_2.png", "4_1_b3_2.png", "4_1_b4_2.png", "4_1_b5_2.png");
+            $data['customs_content'] = array("4_1_b1_3", "4_1_b2_3", "4_1_b3_3", "4_1_b4_3", "4_1_b5_3");
             $data['customs_audio'] = array("4_1_b1_4", "4_1_b2_4", "4_1_b3_4", "4_1_b4_4", "4_1_b5_4");
             //故事
-            $data['story_title'] = "4_1_c_1.png";
-            $data['story_youtube'] = "GWnFZI-m-pM";
-            $data['story_content'] = "4_1_c_3.png";
+            $data['story_title'] = "4_1_c_1.svg";
+            $data['story_youtube'] = "jvqaz6LD4lQ";
+            $data['story_content'] = "4_1_c_3";
             $data['story_audio'] = "4_1_c_4";
             //遊戲
-            $data['game_scratch'] = "";
+            $data['game_title'] = "4_1_d_1.svg";
+            $data['game_scratch'] = "629840733";
             break;
       }
 

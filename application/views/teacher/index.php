@@ -9,7 +9,7 @@
     <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ol class="breadcrumb d-flex align-items-center">
         <li class="breadcrumb-item">
-          <a class="text-decoration-none text_dark" href="./index.html">首頁</a>
+          <a class="text-decoration-none text_dark" href="/home">首頁</a>
         </li>
         <li class="breadcrumb-item text_dark active" aria-current="page">教師交流區</li>
       </ol>
@@ -18,11 +18,11 @@
     <div class="row g-3 g-lg-5 justify-content-center">
       <!-- 教學交流 -->
       <div class="col-sm-6 col-lg-4 my-5">
-        <div class="p-3 position-relative text-center bg_light round_1">
+        <div class="p-3 text-center bg_light round_1">
           <div class="menu_ic_pos">
             <img class="img-fluid ic_ctrl" src="/images/teacher/ic_教學交流.png" alt="教學交流">
           </div>
-          <img class="img-fluid mb-3 mt-4" src="/images/teacher/title_教學交流.svg" alt="教學交流">
+          <img class="img-fluid mt-2 mb-3" src="/images/teacher/title_教學交流.svg" alt="教學交流">
 
           <a class="" href="https://youtube.com/playlist?list=PLr8qlAE1LVtD87GQzUYT8dOR5O88eXVMo" target="_blank">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
@@ -43,11 +43,11 @@
       </div>
       <!-- 教材資源 -->
       <div class="col-sm-6 col-lg-4 my-5">
-        <div class="p-3 position-relative text-center bg_light round_1">
+        <div class="p-3 text-center bg_light round_1">
           <div class="menu_ic_pos">
             <img class="img-fluid ic_ctrl" src="/images/teacher/ic_教材資源.png" alt="教材資源">
           </div>
-          <img class="img-fluid mb-3 mt-4" src="/images/teacher/title_教材資源.svg" alt="教材資源">
+          <img class="img-fluid mt-2 mb-3" src="/images/teacher/title_教材資源.svg" alt="教材資源">
 
           <a class="pointer_none" href="#">
             <div class="bg_beachBlue round_1 btn_disable mb-3">
