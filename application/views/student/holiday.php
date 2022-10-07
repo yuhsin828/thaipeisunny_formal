@@ -68,3 +68,9 @@
 </body>
 
 </html>
+
+
+
+<script>
+    $('title').text('中華節慶｜小泰陽華文樂園');
+</script>

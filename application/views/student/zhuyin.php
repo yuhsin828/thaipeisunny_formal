@@ -68,6 +68,8 @@
 
 
 <script>
+  $('title').text('注音符號｜小泰陽華文樂園');
+
   let letter = '01';
   let voice = 0;
   letterClick('01');
@@ -178,16 +180,19 @@
     $('#play1').removeClass('bg_orange');
     $('#play2').removeClass('bg_orange');
     $('#play' + n).addClass('bg_orange');
+    setTimeout(function() {
+      $('#play' + n).removeClass('bg_orange');
+    }, 1800)
 
     $('#audio' + n).attr("autoplay", "");
     if (parseInt(n) + voice == 1) {
-      $('#audio' + n).attr("src", '/images/zhuyin/audio/A_' + letter + '_m_ab.mp3');
+      $('#audio' + n).attr("src", '/wav/zhuyin/A_' + letter + '_m_ab.mp3');
     } else if (parseInt(n) + voice == 2 && voice == 0) {
-      $('#audio' + n).attr("src", '/images/zhuyin/audio/A_' + letter + '_w_ab.mp3');
+      $('#audio' + n).attr("src", '/wav/zhuyin/A_' + letter + '_w_ab.mp3');
     } else if (parseInt(n) + voice == 2 && voice == 1) {
-      $('#audio' + n).attr("src", '/images/zhuyin/audio/A_' + letter + '_m_c.mp3');
+      $('#audio' + n).attr("src", '/wav/zhuyin/A_' + letter + '_m_c.mp3');
     } else if (parseInt(n) + voice == 3) {
-      $('#audio' + n).attr("src", '/images/zhuyin/audio/A_' + letter + '_w_c.mp3');
+      $('#audio' + n).attr("src", '/wav/zhuyin/A_' + letter + '_w_c.mp3');
     }
   }
 </script>

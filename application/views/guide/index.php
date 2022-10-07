@@ -99,3 +99,9 @@
 </body>
 
 </html>
+
+
+
+<script>
+    $('title').text('網站導覽｜小泰陽華文樂園');
+</script>

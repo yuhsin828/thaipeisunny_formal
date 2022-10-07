@@ -92,6 +92,8 @@
 
 
 <script>
+  $('title').text('小學部課文唸讀｜小泰陽華文樂園');
+
   let curGrade = 1;
   let curSemester = 1;
   let curLesson = 1;

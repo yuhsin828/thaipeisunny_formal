@@ -62,14 +62,12 @@ class Student extends CI_Controller
    public function holiday()
    {
       $data['page'] = "student";
-      $this->load->model('Student_Model');
       $this->load->view('student/holiday.php', $data);
    }
 
    public function holidaydetail($id)
    {
       $data['page'] = "student";
-      // $this->load->model('Student_Model');
 
       switch ($id) {
          case "1": //春節
@@ -277,7 +275,7 @@ class Student extends CI_Controller
    ////
 
 
-   public function life()
+   public function huayu()
    {
       $data['page'] = "student";
       $this->load->model('Student_Model');
@@ -287,7 +285,7 @@ class Student extends CI_Controller
       $data['viewClass2'] = $result2;
       $result3 = $this->Student_Model->query_life('3');
       $data['viewClass3'] = $result3;
-      $this->load->view('student/life.php', $data);
+      $this->load->view('student/huayu.php', $data);
    }
 
    public function lifelist($id)

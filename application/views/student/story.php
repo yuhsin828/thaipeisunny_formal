@@ -59,6 +59,8 @@
 
 
 <script>
+  $('title').text('小泰陽故事集｜小泰陽華文樂園');
+
   function storyClick(id) {
     $('.video_ctrl').removeClass('d-none');
     $('#videoPlayer').attr("src", 'https://www.youtube.com/embed/' + id);

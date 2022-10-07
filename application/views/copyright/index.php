@@ -51,3 +51,9 @@
 </body>
 
 </html>
+
+
+
+<script>
+    $('title').text('著作權宣告｜小泰陽華文樂園');
+</script>

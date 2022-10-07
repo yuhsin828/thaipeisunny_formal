@@ -158,6 +158,8 @@
 
 
 <script>
+  $('title').text('中華節慶｜小泰陽華文樂園');
+
   let prevI = 1;
   let curI = 1;
   // let prevCustom = 0;

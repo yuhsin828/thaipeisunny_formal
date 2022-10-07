@@ -70,3 +70,9 @@
 </body>
 
 </html>
+
+
+
+<script>
+  $('title').text('教師交流區｜小泰陽華文樂園');
+</script>

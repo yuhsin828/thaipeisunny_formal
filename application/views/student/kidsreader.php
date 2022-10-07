@@ -65,6 +65,8 @@
 
 
 <script>
+    $('title').text('幼兒園讀本唸讀｜小泰陽華文樂園');
+
     // 每切換課次，復原所有課次按鈕的背景顏色，設定此課次按鈕的背景顏色；呼叫 播放音檔
     function lessonClick(semester, start, end, btn) {
         for (let i = 1; i <= 5; i++) {
