@@ -2,11 +2,11 @@
 
 class  Student_Model extends CI_Model
 {
-  function query_zhuyin()
-  {
-    $sql = "SELECT * FROM zhuyin order by zhuyin_row asc, zhuyin_order asc ";
-    return $this->db->query($sql, array());
-  }
+  // function query_zhuyin()
+  // {
+  //   $sql = "SELECT * FROM zhuyin order by zhuyin_row asc, zhuyin_order asc ";
+  //   return $this->db->query($sql, array());
+  // }
 
   // function query_textbook()
   // {
@@ -20,7 +20,7 @@ class  Student_Model extends CI_Model
   //   return $this->db->query($sql, array());
   // }
 
-  //
+  ////
 
   function query_life($id)
   {

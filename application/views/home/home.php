@@ -172,7 +172,7 @@
         <!-- holiday -->
         <div class="item">
           <div class="card round_1">
-            <img class="card-img-top" src="/images/home/not yet.png" alt="中華節慶">
+            <img class="card-img-top" src="/images/home/hot_holiday.gif" alt="中華節慶">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">中華節慶</h5>
               <p class="card-text text-center overflow_dot">春節、元宵節、清明節、端午節、七夕、中元節、中秋節、重陽節</p>
@@ -187,7 +187,7 @@
         <!-- story -->
         <div class="item">
           <div class="card round_1">
-            <img class="card-img-top" src="/images/home/not yet.png" alt="小泰陽故事集">
+            <img class="card-img-top" src="/images/home/hot_story" alt="小泰陽故事集">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">小泰陽故事集</h5>
               <p class="card-text text-center overflow_dot">三隻小豬、龜兔賽跑、誠實的小豬、小八立大功、天堂地獄、放羊的孩子、邦邦想飛</p>
@@ -199,8 +199,23 @@
             </div>
           </div>
         </div>
-        <!-- huayu -->
+        <!-- textbook -->
         <div class="item">
+          <div class="card round_1">
+            <img class="card-img-top" src="/images/home/hot_textbook" alt="小學部課文唸讀">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bolder">小學部課文唸讀</h5>
+              <p class="card-text text-center overflow_dot">泰國版華文課本，小學一至六年級，上下學期課文音檔</p>
+              <div class="text-center">
+                <a class="text-decoration-none fw-bolder text_orange" href="/student/textbook">馬上學習
+                  <i class="fa fa-arrow-right ms-1" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- huayu -->
+        <!-- <div class="item">
           <div class="card round_1">
             <img class="card-img-top" src="/images/home/not yet.png" alt="生活華語">
             <div class="card-body">
@@ -213,7 +228,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -325,10 +340,10 @@
 
   <?php $this->load->view("common/footer.php"); ?>
 
+  <script src="/js/vendor/wow.min.js"></script>
   <script src="/js/home.js"></script>
   <script src="/js/lottie.js"></script>
-  <script src="./js/vendor/wow.min.js"></script>
-
+  
 </body>
 
 </html>

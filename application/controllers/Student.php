@@ -29,9 +29,9 @@ class Student extends CI_Controller
    public function zhuyin()
    {
       $data['page'] = "student";
-      $this->load->model('Student_Model');
-      $result1 = $this->Student_Model->query_zhuyin();
-      $data['viewClass1'] = $result1;
+      // $this->load->model('Student_Model');
+      // $result1 = $this->Student_Model->query_zhuyin();
+      // $data['viewClass1'] = $result1;
       $this->load->view('student/zhuyin.php', $data);
    }
 

@@ -36,7 +36,7 @@
           </a>
           <a class="" href="/student/textbook">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
-              <img class="img-fluid" src="/images/student/btn_in_textbook.svg" alt="小學部課本唸讀">
+              <img class="img-fluid" src="/images/student/btn_in_textbook.svg" alt="小學部課文唸讀">
             </div>
           </a>
         </div>

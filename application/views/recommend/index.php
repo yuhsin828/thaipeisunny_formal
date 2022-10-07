@@ -23,3 +23,9 @@
 </body>
 
 </html>
+
+
+
+<Script>
+  $('title').text('好站推薦｜小泰陽華文樂園');
+</Script>

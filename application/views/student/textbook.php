@@ -70,6 +70,7 @@
         <div class="d-flex justify-content-center mb-3">
           <img src="/images/textbook/s2.svg" alt="下學期">
         </div>
+        <h6 class="pb-2 text-center fs_sr"><i class="fa fa-bullhorn me-1" aria-hidden="true"></i>下學期第9-15課錄製中，暫時無法播放，敬請見諒</h6>
         <div class="d-flex justify-content-center flex-wrap gap-2 gap-sm-3 mb-5">
           <?php for ($i = 1; $i <= 15; $i++) {
             echo '<div class="bg_lightPink round_1 box_shadow_2 pointer" id="S2L' . $i . '" onclick="lessonClick(2, ' . $i . ')">';

@@ -26,13 +26,13 @@
       <div class="d-md-flex justify-content-evenly px-3 py-5 px-md-5 gap-3" id="item1">
         <div class="text-center">
           <div class="title_ctrl">
-            <img class="img-fluid" src="/images/holiday/<?php echo $main_title; ?>" alt="">
+            <img class="img-fluid" src="/images/holiday/<?php echo $main_title; ?>" alt="<?php echo $main; ?>">
           </div>
           <div class="pic_ctrl my-2">
-            <img class="img-fluid" src="/images/holiday/<?php echo $main_img; ?>" alt="">
+            <img class="img-fluid" src="/images/holiday/<?php echo $main_img; ?>" alt="<?php echo $main; ?>簡介圖片">
           </div>
           <div class="src_ctrl">
-            <div class="text_dark fs_s">圖片來源：https://www.irasutoya.com/</div>
+            <div class="text_dark fs_xxs">圖片來源：https://www.irasutoya.com/</div>
           </div>
         </div>
         <div class="text-center d-flex flex-column">
@@ -42,7 +42,7 @@
           <div class="m-auto content_ctrl">
             <picture>
               <source class="img-fluid" srcset="/images/holiday/<?php echo $main_content; ?>.svg" media="(min-width: 425px)">
-              <img class="img-fluid" src="/images/holiday/<?php echo $main_content; ?>m.svg" alt="">
+              <img class="img-fluid" src="/images/holiday/<?php echo $main_content; ?>m.svg" alt="<?php echo $main; ?>簡介">
             </picture>
           </div>
         </div>
@@ -63,10 +63,10 @@
                 <div class="d-md-flex justify-content-evenly gap-3">
                   <div class="text-center">
                     <div class="title_ctrl">
-                      <img class="img-fluid" src="/images/holiday/<?php echo $customs_title[$i]; ?>" alt="">
+                      <img class="img-fluid" src="/images/holiday/<?php echo $customs_title[$i]; ?>" alt="<?php echo $main; ?>習俗">
                     </div>
                     <div class="pic_ctrl">
-                      <img class="img-fluid" src="/images/holiday/<?php echo $customs_img[$i]; ?>" alt="">
+                      <img class="img-fluid" src="/images/holiday/<?php echo $customs_img[$i]; ?>" alt="<?php echo $main; ?>習俗圖片">
                     </div>
                   </div>
                   <div class="text-center d-flex flex-column">
@@ -76,7 +76,7 @@
                     <div class="m-auto content_ctrl">
                       <picture>
                         <source class="img-fluid" srcset="/images/holiday/<?php echo $customs_content[$i]; ?>.svg" media="(min-width: 425px)">
-                        <img class="img-fluid" src="/images/holiday/<?php echo $customs_content[$i]; ?>m.svg" alt="">
+                        <img class="img-fluid" src="/images/holiday/<?php echo $customs_content[$i]; ?>m.svg" alt="<?php echo $main; ?>習俗介紹">
                       </picture>
                     </div>
                   </div>
@@ -97,7 +97,7 @@
       <!-- 故事 -->
       <div class="text-center px-3 py-5 px-md-5 item_hide" id="item3">
         <div class="title_ctrl mb-3">
-          <img class="img-fluid" src="/images/holiday/<?php echo $story_title; ?>" alt="">
+          <img class="img-fluid" src="/images/holiday/<?php echo $story_title; ?>" alt="<?php echo $main; ?>故事">
         </div>
         <div class="video_ctrl">
           <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
@@ -109,7 +109,7 @@
           <picture>
             <source class="img-fluid" srcset="/images/holiday/<?php echo $story_content; ?>.svg" media="(min-width: 768px)">
             <source class="img-fluid" srcset="/images/holiday/<?php echo $story_content; ?>t.svg" media="(min-width: 425px)">
-            <img class="img-fluid" src="/images/holiday/<?php echo $story_content; ?>m.svg" alt="">
+            <img class="img-fluid" src="/images/holiday/<?php echo $story_content; ?>m.svg" alt="<?php echo $main; ?>故事內文">
           </picture>
         </div>
       </div>
@@ -117,7 +117,7 @@
       <!-- 遊戲 -->
       <div class="text-center px-3 py-5 px-md-5 item_hide" id="item4">
         <div class="title_ctrl mb-3">
-          <img class="img-fluid" src="/images/holiday/<?php echo $game_title; ?>" alt="">
+          <img class="img-fluid" src="/images/holiday/<?php echo $game_title; ?>" alt="<?php echo $main; ?>遊戲">
         </div>
         <div class="scratch_ctrl">
           <iframe id="scratchPlayer" src="" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>

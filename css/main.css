@@ -17,11 +17,6 @@ body {
     list-style-type: none;
 }
 
-/*---------------- navigation ----------------*/
-/* nav .navbar-brand .img-fluid {
-    max-width: 250px;
-} */
-
 nav .text_dark:visited {
     color: #333333;
 }
@@ -49,10 +44,10 @@ nav ul .active:hover {
 /*---------------- goTop button ----------------*/
 .top_btn {
     position: fixed;
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     bottom: 2rem;
-    right: 2rem;
+    right: 1.5rem;
     z-index: 999;
     background-color: #F8DE76;
     border: 0;
@@ -146,7 +141,7 @@ footer li .text_light:hover {
     background-color: #FCE9DB;
 }
 
-.bg_gold{
+.bg_gold {
     background-color: #F7CB0F;
 }
 
@@ -164,8 +159,12 @@ footer li .text_light:hover {
 }
 
 /*---------------- other styles ----------------*/
-.fs_s{
-    font-size:xx-small;
+.fs_xxs {
+    font-size: xx-small;
+}
+
+.fs_sr {
+    font-size: smaller;
 }
 
 .round_05 {
@@ -275,11 +274,11 @@ aside .text_dark:hover {
 }
 
 /*---------------- textbook page ----------------*/
-.player_pos {
+/* .player_pos {
     position: fixed;
     bottom: 6rem;
     right: -60%;
-    /* transform: translateX(80%); */
+    transform: translateX(80%);
     z-index: 998;
 }
 
@@ -311,7 +310,7 @@ aside .text_dark:hover {
     .player_pos {
         right: -10%;
     }
-}
+} */
 
 /*---------------- holidaydetail page ----------------*/
 .item_hide {

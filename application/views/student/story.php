@@ -71,7 +71,7 @@
     }, 200);
   }
 
-  /* owlCarousel圖卡輪播 */
+  // owlCarousel圖卡輪播
   $('.owl-carousel').owlCarousel({
     loop: false,
     margin: 10,
