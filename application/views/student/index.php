@@ -78,6 +78,6 @@
 
 
 
-<Script>
+<script>
   $('title').text('學生學習區｜小泰陽華文樂園');
-</Script>
+</script>

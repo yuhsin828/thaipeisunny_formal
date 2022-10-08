@@ -29,6 +29,6 @@
 
 
 
-<Script>
-  $('title').text('生活華語｜小泰陽華文樂園');
-</Script>
+<script>
+    $('title').text('生活華語｜小泰陽華文樂園');
+</script>

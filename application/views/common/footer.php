@@ -93,4 +93,5 @@
 <script src="/js/vendor/bootstrap.min.js"></script>
 <script src="/js/vendor/lottie.min.js"></script>
 <script src="/js/vendor/owl.carousel.min.js"></script>
+<script src="/js/vendor/wow.min.js"></script>
 <script src="/js/main.js"></script>

@@ -9,7 +9,7 @@
     <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ol class="breadcrumb d-flex align-items-center">
         <li class="breadcrumb-item">
-          <a class="text-decoration-none text_dark" href="./index.html">首頁</a>
+          <a class="text-decoration-none text_dark" href="/home">首頁</a>
         </li>
         <li class="breadcrumb-item text_dark active" aria-current="page">好站推薦</li>
       </ol>
@@ -26,6 +26,6 @@
 
 
 
-<Script>
+<script>
   $('title').text('好站推薦｜小泰陽華文樂園');
-</Script>
+</script>

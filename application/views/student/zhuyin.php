@@ -24,9 +24,9 @@
         <div class="d-flex flex-wrap justify-content-start gap-3">
           <?php for ($i = 1; $i <= 37; $i++) {
             if ($i < 10) {
-              echo '<img class="img-fluid bg_lightPink round_50 box_shadow_2 pointer" id="0' . $i . '" src="/images/zhuyin/0' . $i . '" alt="0' . $i . '" onclick="letterClick(\'0' . $i . '\')">';
+              echo '<img class="img-fluid bg_lightPink round_50 box_shadow_2 pointer" id="0' . $i . '" src="/images/zhuyin/0' . $i . '.svg" alt="0' . $i . '" onclick="letterClick(\'0' . $i . '\')">';
             } else {
-              echo '<img class="img-fluid bg_lightPink round_50 box_shadow_2 pointer" id="' . $i . '" src="/images/zhuyin/' . $i . '" alt="' . $i . '" onclick="letterClick(\'' . $i . '\')">';
+              echo '<img class="img-fluid bg_lightPink round_50 box_shadow_2 pointer" id="' . $i . '" src="/images/zhuyin/' . $i . '.svg" alt="' . $i . '" onclick="letterClick(\'' . $i . '\')">';
             }
           }
           ?>

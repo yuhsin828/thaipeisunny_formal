@@ -187,7 +187,7 @@
         <!-- story -->
         <div class="item">
           <div class="card round_1">
-            <img class="card-img-top" src="/images/home/hot_story" alt="小泰陽故事集">
+            <img class="card-img-top" src="/images/home/hot_story.gif" alt="小泰陽故事集">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">小泰陽故事集</h5>
               <p class="card-text text-center overflow_dot">三隻小豬、龜兔賽跑、誠實的小豬、小八立大功、天堂地獄、放羊的孩子、邦邦想飛</p>
@@ -202,7 +202,7 @@
         <!-- textbook -->
         <div class="item">
           <div class="card round_1">
-            <img class="card-img-top" src="/images/home/hot_textbook" alt="小學部課文唸讀">
+            <img class="card-img-top" src="/images/home/hot_textbook.gif" alt="小學部課文唸讀">
             <div class="card-body">
               <h5 class="card-title text-center fw-bolder">小學部課文唸讀</h5>
               <p class="card-text text-center overflow_dot">泰國版華文課本，小學一至六年級，上下學期課文音檔</p>
@@ -340,10 +340,8 @@
 
   <?php $this->load->view("common/footer.php"); ?>
 
-  <script src="/js/vendor/wow.min.js"></script>
   <script src="/js/home.js"></script>
-  <script src="/js/lottie.js"></script>
-  
+
 </body>
 
 </html>
