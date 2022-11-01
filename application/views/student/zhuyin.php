@@ -166,7 +166,7 @@
         imgType = '.gif';
         break;
       case "c":
-        imgType = '.svg';
+        imgType = '.PNG';
         break;
       default:
         imgType = '.jpg';

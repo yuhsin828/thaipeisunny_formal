@@ -66,7 +66,7 @@
                     </div>
                     <div>
                         <i class="fa fa-envelope me-1" aria-hidden="true"></i>
-                        <a class="text-decoration-none text_dark" target="_blank" href="mailto:thaipeisunny@gmail.com">thaipeisunny@gmail.com
+                        <a class="text-decoration-none text_dark" target="_blank" href="mailto:thaipeisunny@gmail.com">thaipeisunny.web@gmail.com
                             <i class="fa fa-external-link ms-1" aria-hidden="true"></i>
                         </a>
                     </div>
