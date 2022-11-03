@@ -26,6 +26,19 @@
   <title>小泰陽華文樂園</title>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-11S18DKPGL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-11S18DKPGL');
+</script>
+
 <body>
   <header class="position-relative hw_100 bg_white">
     <!-- main background -->
