@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="國北小泰陽 學習資源網 小泰陽華文樂園">
+  <meta name="description" content="小泰陽華文樂園，又名「國北小泰陽學習資源網」，由國立臺北教育大學的國際志工團隊「國北小泰陽」所創立，為泰北的孩子們打造一個專屬的華文學習樂園。">
   <meta name="keywords" content="國北小泰陽, 華語文教學, 華語文學習, 泰北華校, 學習資源網, 小泰陽華文樂園">
 
   <link rel="shortcut icon" href="/favicon.ico">

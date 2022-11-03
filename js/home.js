@@ -33,6 +33,27 @@ $('#scrollDown').click(function () {
     $('html,body').animate({ scrollTop: topSec }, 200);
 });
 
+/* lottie animation */
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('ferrisWheel'), // Required
+    path: '../json/ferrisWheelWithElephant.json', // Required
+    animType: 'svg', // Required
+    prerender: true,
+    loop: true, // Optional
+    autoplay: true, // Optional
+    name: "Hello World", // Name for future reference. Optional.
+})
+// $('#ferrisWheel').hover(function () {
+//     animation.play();
+// }, function () {
+//     animation.pause();
+// });
+
+/* 啟動wow */
+$(function () {
+    new WOW().init();
+})
+
 /* owlCarousel圖卡輪播 */
 $('.owl-carousel').owlCarousel({
     loop: false,
@@ -50,25 +71,3 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-
-/* 啟動wow */
-$(function () {
-    new WOW().init();
-})
-
-/* lottie animation */
-var animation = bodymovin.loadAnimation({
-    container: document.getElementById('ferrisWheel'), // Required
-    path: '../json/ferrisWheelWithElephant.json', // Required
-    animType: 'svg', // Required
-    prerender: true,
-    loop: true, // Optional
-    autoplay: true, // Optional
-    name: "Hello World", // Name for future reference. Optional.
-})
-
-// $('#ferrisWheel').hover(function () {
-//     animation.play();
-// }, function () {
-//     animation.pause();
-// });
