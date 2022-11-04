@@ -23,7 +23,7 @@
 
     <div class="bg_light round_1" id="mainContent">
       <!-- 簡介 -->
-      <div class="d-md-flex justify-content-evenly px-3 py-5 px-md-5 gap-3" id="item1">
+      <div class="d-md-flex justify-content-evenly px-2 py-5 px-md-5 pb-md-3 gap-3" id="item1">
         <div class="text-center">
           <div class="title_ctrl">
             <img class="img-fluid" src="/images/holiday/<?php echo $main_title; ?>" alt="<?php echo $main; ?>">
@@ -95,7 +95,7 @@
       </div>
 
       <!-- 故事 -->
-      <div class="text-center px-3 py-5 px-md-5 item_hide" id="item3">
+      <div class="text-center px-2 py-5 px-md-5 pb-md-3 item_hide" id="item3">
         <div class="title_ctrl mb-3">
           <img class="img-fluid" src="/images/holiday/<?php echo $story_title; ?>" alt="<?php echo $main; ?>故事">
         </div>
@@ -115,7 +115,7 @@
       </div>
 
       <!-- 遊戲 -->
-      <div class="text-center px-3 py-5 px-md-5 item_hide" id="item4">
+      <div class="text-center px-2 py-5 px-md-5 pb-md-3 item_hide" id="item4">
         <div class="title_ctrl mb-3">
           <img class="img-fluid" src="/images/holiday/<?php echo $game_title; ?>" alt="<?php echo $main; ?>遊戲">
         </div>
@@ -162,7 +162,6 @@
 
   let prevI = 1;
   let curI = 1;
-  // let prevCustom = 0;
 
   $('#topNav').removeClass('sticky-top');
 
@@ -202,10 +201,12 @@
     prevI = i; // 更新前一個選項編號
   }
 
+  // let prevCustom = 0;
+  // let curCustom;
   // 滑動切換習俗時， 停止播放音檔
   // $(window).scroll(function() {
   //   if (curI == 2) {
-  //     let curCustom = $('.carousel-indicators .active').attr('data-bs-slide-to');
+  //     curCustom = $('.carousel-indicators .active').attr('data-bs-slide-to');
   //     // console.log(curCustom);
   //     if (curCustom !== prevCustom) {
   //       stopMp3();
