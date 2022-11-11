@@ -9,88 +9,113 @@
 
 <url>
   <loc>http://www.thaipeisunny.org.tw/</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://www.thaipeisunny.org.tw/home</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.thaipeisunny.org.tw/student</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.thaipeisunny.org.tw/teacher</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.thaipeisunny.org.tw/recommend</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.thaipeisunny.org.tw/student/holiday</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.thaipeisunny.org.tw/student/story</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.thaipeisunny.org.tw/student/textbook</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.thaipeisunny.org.tw/about</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/news</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/guide</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/resource</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/copyright</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/contact</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.thaipeisunny.org.tw/textbook</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.thaipeisunny.org.tw/links</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.thaipeisunny.org.tw/news/detail/1</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/student/zhuyin</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/news/detail/2</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/student/kidsreader</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/textbook/detail/1</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/student/huayu</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/textbook/detail/2</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/student/holidaydetail/1</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/textbook/detail/3</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/student/holidaydetail/2</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/textbook/detail/4</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/student/holidaydetail/3</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/textbook/detail/5</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/student/holidaydetail/4</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/textbook/detail/6</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
+  <loc>http://www.thaipeisunny.org.tw/student/holidaydetail/5</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.thaipeisunny.org.tw/textbook/detail/textbook/detail/1</loc>
-  <lastmod>2020-06-19T02:10:11+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>http://www.thaipeisunny.org.tw/student/holidaydetail/6</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.thaipeisunny.org.tw/student/holidaydetail/7</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.thaipeisunny.org.tw/student/holidaydetail/8</loc>
+  <lastmod>2022-11-08T04:40:51+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
