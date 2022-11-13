@@ -48,7 +48,6 @@
           <!-- lottie animation -->
           <div class="wheel_ctrl d-flex justify-content-center justify-content-lg-end">
             <div class="img-fluid wheel_svg" id="ferrisWheel"></div>
-            <!-- <img class="img-fluid wheel_svg" src="/images/home/小泰陽摩天輪.png" alt="小泰陽摩天輪"> -->
           </div>
         </div>
         <div class="col-md-6 text-center text-lg-start">
@@ -66,7 +65,6 @@
     <nav class="navbar navbar-expand-md navbar-light nav_ctrl" id="topNav">
       <div class="container">
         <a class="navbar-brand d-none" href="/home">
-          <!-- <img class="img-fluid" src="/images/小泰陽華文樂園logo_d.svg" alt="小泰陽華文樂園logo" width="250px"> -->
           <svg class="img-fluid" width="250" viewBox="0 0 2250 720" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M703.901 670H16.0992C13.283 670 11 672.638 11 675.892V684.108C11 687.362 13.283 690 16.0992 690H703.901C706.717 690 709 687.362 709 684.108V675.892C709 672.638 706.717 670 703.901 670Z" fill="#603813" stroke="#603813" stroke-miterlimit="10" />
             <path d="M120 669.766L360 346L150.634 669.766H120Z" fill="#603813" />
