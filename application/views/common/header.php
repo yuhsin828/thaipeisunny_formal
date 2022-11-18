@@ -35,7 +35,7 @@
 </script>
 
 <body>
-  <!-- navbar with hambergur and fixed-top -->
+  <!-- navbar with hamburger and fixed-top -->
   <nav class="navbar navbar-expand-md navbar-light sticky-top shadow-sm bg_white" id="topNav">
     <div class="container">
       <a class="navbar-brand" href="/home">

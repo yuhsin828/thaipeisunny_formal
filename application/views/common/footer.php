@@ -2,7 +2,6 @@
   <div class="container py-5">
     <div class="d-flex justify-content-evenly align-items-center mb-2">
       <div class="">
-        <!-- <img class="img-fluid" src="/images/小泰陽華文樂園logo_l.svg" alt="小泰陽華文樂園logo" width="250px"> -->
         <svg class="img-fluid" width="250" viewBox="0 0 2250 720" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M703.901 670H16.0992C13.283 670 11 672.638 11 675.892V684.108C11 687.362 13.283 690 16.0992 690H703.901C706.717 690 709 687.362 709 684.108V675.892C709 672.638 706.717 670 703.901 670Z" fill="#FFFEF9" stroke="#FFFEF9" stroke-miterlimit="10" />
           <path d="M120 669.766L360 346L150.634 669.766H120Z" fill="#FFFEF9" />

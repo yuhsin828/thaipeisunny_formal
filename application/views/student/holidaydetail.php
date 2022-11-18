@@ -87,10 +87,10 @@
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-          <img class="img-fluid carousel-control-prev-icon" aria-hidden="true" src="/images/holiday/4_往左.svg" onclick="stopMp3()">
+          <img class="img-fluid carousel-control-prev-icon" aria-hidden="true" src="/images/holiday/4_往左.svg" alt="上一頁" onclick="stopMp3()">
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-          <img class="img-fluid carousel-control-next-icon" aria-hidden="true" src="/images/holiday/4_往右.svg" onclick="stopMp3()">
+          <img class="img-fluid carousel-control-next-icon" aria-hidden="true" src="/images/holiday/4_往右.svg" alt="下一頁" onclick="stopMp3()">
         </button>
       </div>
 

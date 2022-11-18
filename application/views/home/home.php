@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <!-- navbar with hambergur and fixed-top -->
+    <!-- navbar with hamburger and fixed-top -->
     <nav class="navbar navbar-expand-md navbar-light nav_ctrl" id="topNav">
       <div class="container">
         <a class="navbar-brand d-none" href="/home">
@@ -330,7 +330,7 @@
     <div class="container py-5">
       <div class="row animate__animated animate__fadeIn wow">
         <div class="col-lg-6 p-3">
-          <img class="img-fluid round_1" src="/images/home/about-us.JPG" alt="關於小泰陽">
+          <img class="img-fluid round_1" src="/images/home/about.JPG" alt="關於小泰陽">
         </div>
         <div class="col-lg-6 p-3 d-flex align-items-center justify-content-center row">
           <div class="col-xl-10">
