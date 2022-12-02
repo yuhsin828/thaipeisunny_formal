@@ -38,18 +38,12 @@ class Student extends CI_Controller
    public function textbook()
    {
       $data['page'] = "student";
-      // $this->load->model('Student_Model');
-      // $result1 = $this->Student_Model->query_textbook();
-      // $data['viewClass1'] = $result1;
       $this->load->view('student/textbook.php', $data);
    }
 
    public function kidsreader()
    {
       $data['page'] = "student";
-      // $this->load->model('Student_Model');
-      // $result1 = $this->Student_Model->query_query_kidsreader();
-      // $data['viewClass1'] = $result1;
       $this->load->view('student/kidsreader.php', $data);
    }
 
@@ -275,7 +269,7 @@ class Student extends CI_Controller
    ////
 
 
-   public function huayu()
+   public function life()
    {
       $data['page'] = "student";
       $this->load->model('Student_Model');
@@ -285,10 +279,10 @@ class Student extends CI_Controller
       $data['viewClass2'] = $result2;
       $result3 = $this->Student_Model->query_life('3');
       $data['viewClass3'] = $result3;
-      $this->load->view('student/huayu.php', $data);
+      $this->load->view('student/life.php', $data);
    }
 
-   public function lifelist($id)
+   public function lifedetail($id)
    {
       if ($id == "") $id = "1";
       $data['page'] = "student";
@@ -297,7 +291,7 @@ class Student extends CI_Controller
       $data['viewClass'] = $result;
       $data['category'] = $id;
       //$data['row_cnt']=$result->num_rows();
-      $this->load->view('student/lifelist.php', $data);
+      $this->load->view('student/lifedetail.php', $data);
    }
 
    function queryCurrentLife()

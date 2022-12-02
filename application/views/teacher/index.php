@@ -15,7 +15,7 @@
       </ol>
     </div>
 
-    <div class="row g-3 g-lg-5 justify-content-center">
+    <div class="row justify-content-center">
       <!-- 教學交流 -->
       <div class="col-sm-6 col-lg-4 my-5">
         <div class="p-3 text-center bg_light round_1">

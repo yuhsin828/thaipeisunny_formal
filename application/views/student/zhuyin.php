@@ -113,7 +113,10 @@
 
   // 每切換符號，秀出主圖，畫面自動滑動到主圖（預設一進來是ㄅ）
   function showPic(id2) {
-    $('#mainPic').attr("src", '/images/zhuyin/mainPic/A_' + id2 + '_a.jpg');
+    $('#mainPic').attr({
+      src: '/images/zhuyin/mainPic/A_' + id2 + '_a.jpg',
+      alt: '注音'
+    });
 
     const item = $('#zhuyinMain').offset().top - $('.navbar').innerHeight();
     $('html,body').animate({
@@ -161,18 +164,25 @@
     switch (n) {
       case "a":
         imgType = '.jpg';
+        altName = '注音';
         break;
       case "b":
         imgType = '.gif';
+        altName = '筆順';
         break;
       case "c":
         imgType = '.PNG';
+        altName = '圖卡';
         break;
       default:
         imgType = '.jpg';
+        altName = '注音';
         break;
     }
-    $('#mainPic').attr("src", '/images/zhuyin/mainPic/A_' + letter + '_' + n + imgType);
+    $('#mainPic').attr({
+      src: '/images/zhuyin/mainPic/A_' + letter + '_' + n + imgType,
+      alt: altName
+    });
   }
 
   //每切換音檔，復原兩個音檔按鈕的背景顏色，設定此音檔按鈕的背景顏色，判斷是（voice 注音/圖卡、n 男/女）哪個音檔

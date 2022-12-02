@@ -310,11 +310,11 @@
         <h3 class="text-center fw-bolder">加入FB交流社團</h3>
       </div>
       <div class="row flex-row-reverse justify-content-center align-items-center">
-        <div class="col-md-4 d-flex justify-content-center">
+        <div class="col-md-5 d-flex justify-content-center">
           <img class="img-fluid mb-4" src="/images/home/臉書社團.png" alt="加入FB交流社團" width="360px">
         </div>
-        <div class="col-md-4">
-          <p class="text-start lh-lg">歡迎在泰北學習華文的孩子們加入社團，跟著小泰陽的老師一起學習更多有趣的華文吧！</p>
+        <div class="col-md-5">
+          <p class="text-start lh-lg overflow_lines_dot">小泰陽的老師會在社團分享許多有趣的生活知識，也會舉辦活動讓大家練習華文、互相交流，歡迎在泰北學習華文的你加入，跟著小泰陽一起暢遊華文吧！</p>
           <div class="text-center animate__animated animate__tada wow" data-wow-delay="0.5s">
             <a class="text-decoration-none fw-bolder text_orange" target="_blank" role="button" href="https://www.facebook.com/groups/thaipeisunny.web.discussion">馬上加入
               <i class="fa fa-external-link ms-1" aria-hidden="true"></i>

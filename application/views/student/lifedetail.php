@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
 
+<?php
+$row_cnt = $viewClass->num_rows();
+//echo "Vicc".$row_cnt;
+?>
+
 <?php $this->load->view("common/header.php"); ?>
 
 <main class="bg_lemonYellow">
@@ -14,10 +19,14 @@
                 <li class="breadcrumb-item">
                     <a class="text-decoration-none text_dark" href="/student">學生學習區</a>
                 </li>
-                <li class="breadcrumb-item text_dark active" aria-current="page">生活華語</li>
+                <li class="breadcrumb-item">
+                    <a class="text-decoration-none text_dark" href="/student/life">生活華語</a>
+                </li>
+                <li class="breadcrumb-item text_dark active" aria-current="page"> </li>
             </ol>
         </div>
-        <h6 class="pt-2 text-center">整修中，敬請期待<i class="fa fa-wrench ms-1" aria-hidden="true"></i></h6>
+
+
     </div>
 </main>
 
@@ -30,5 +39,5 @@
 
 
 <script>
-    $('title').text('生活華語｜小泰陽華文樂園');
+    
 </script>

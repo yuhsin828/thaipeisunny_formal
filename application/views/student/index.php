@@ -15,7 +15,7 @@
       </ol>
     </div>
 
-    <div class="row g-3 g-lg-5 justify-content-center">
+    <div class="row justify-content-center">
       <!-- 課內學習 -->
       <div class="col-sm-6 col-lg-4 my-5">
         <div class="p-3 text-center bg_light round_1">
@@ -54,9 +54,9 @@
               <img class="img-fluid" src="/images/student/btn_out_story.svg" alt="小泰陽故事集">
             </div>
           </a>
-          <a class="" href="/student/huayu">
+          <a class="" href="/student/life">
             <div class="bg_beachBlue round_1 box_shadow_4 mb-3">
-              <img class="img-fluid" src="/images/student/btn_out_huayu.svg" alt="生活華語">
+              <img class="img-fluid" src="/images/student/btn_out_life.svg" alt="生活華語">
             </div>
           </a>
           <a class="" href="/student/holiday">

@@ -110,28 +110,6 @@
       </div>
     </div>
 
-    <!-- 國語小字典2 -->
-    <!-- <div class="bg_light round_1 mb-4 mb-lg-5">
-      <div class="row p-4 p-lg-5">
-        <div class="col-md-6 text-center d-flex flex-column align-self-center">
-          <div class="title_ctrl mb-3 mb-md-2">
-            <img class="img-fluid" src="/images/recommend/1-1.svg" alt="國語小字典">
-          </div>
-          <div class="video_ctrl">
-            <iframe src="https://www.youtube.com/embed/HTFI6zbbAIc" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-md-6 text-center d-flex flex-column align-self-center">
-          <div class="intro_ctrl my-3 mt-lg-0 mb-lg-4">
-            <img class="img-fluid" src="/images/recommend/1-2.svg" alt="國語小字典介紹">
-          </div>
-          <a class="text-center" href="https://dict.mini.moe.edu.tw" target="_blank">
-            <img class="img-fluid bg_gold round_1 box_shadow_2" src="/images/recommend/btn_前往網站.svg" alt="前往網站">
-          </a>
-        </div>
-      </div>
-    </div> -->
-
   </div>
 </main>
 
