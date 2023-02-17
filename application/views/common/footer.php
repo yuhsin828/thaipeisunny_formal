@@ -88,6 +88,7 @@
   </div>
 </footer>
 
+<script src="/js/vendor/popper.min.js"></script>
 <script src="/js/vendor/jquery-3.6.0.min.js"></script>
 <script src="/js/vendor/bootstrap.min.js"></script>
 <script src="/js/vendor/lottie.min.js"></script>

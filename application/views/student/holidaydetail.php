@@ -17,7 +17,23 @@
         <li class="breadcrumb-item">
           <a class="text-decoration-none text_dark" href="/student/holiday">中華節慶</a>
         </li>
-        <li class="breadcrumb-item text_dark active" aria-current="page"><?php echo $main; ?></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          <div class="dropdown">
+            <div class="dropdown-toggle pointer" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+              <?php echo $main; ?>
+            </div>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+              <li><a class="dropdown-item" href="/student/holidaydetail/1">春節</a></li>
+              <li><a class="dropdown-item" href="/student/holidaydetail/2">元宵節</a></li>
+              <li><a class="dropdown-item" href="/student/holidaydetail/3">清明節</a></li>
+              <li><a class="dropdown-item" href="/student/holidaydetail/4">端午節</a></li>
+              <li><a class="dropdown-item" href="/student/holidaydetail/5">七夕</a></li>
+              <li><a class="dropdown-item" href="/student/holidaydetail/6">中元節</a></li>
+              <li><a class="dropdown-item" href="/student/holidaydetail/7">中秋節</a></li>
+              <li><a class="dropdown-item" href="/student/holidaydetail/8">重陽節</a></li>
+            </ul>
+          </div>
+        </li>
       </ol>
     </div>
 

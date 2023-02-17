@@ -25,7 +25,7 @@ $row_cnt = $viewClass->num_rows();
                 <li class="breadcrumb-item text_dark active" aria-current="page"> </li>
             </ol>
         </div>
-
+        <h6 class="pt-2 text-center">生活華語頁面整修中，敬請期待<i class="fa fa-wrench ms-1" aria-hidden="true"></i></h6>
 
     </div>
 </main>
@@ -39,5 +39,5 @@ $row_cnt = $viewClass->num_rows();
 
 
 <script>
-    
+
 </script>

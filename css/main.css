@@ -60,7 +60,7 @@ nav ul .active:hover {
 }
 
 /*---------------- breadcrumb ----------------*/
-.breadcrumb-item a:hover {
+.breadcrumb-item .text_dark:hover {
     color: #666666;
     transition: all 0.4s;
 }
