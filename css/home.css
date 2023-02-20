@@ -78,7 +78,6 @@ nav .text_dark:hover {
 
     .nav_btn:hover {
         background-color: #F8DE76;
-        /* border: 0px; */
         box-shadow: none;
         transition: all 0.4s;
     }
@@ -99,9 +98,9 @@ nav .text_dark:hover {
 }
 
 @media screen and (min-width:576px) {
-    .down_btn i {
-        /* bottom: 0; */
-    }
+    /* .down_btn i {
+        bottom: 0;
+    } */
 }
 
 /*---------------- card ----------------*/

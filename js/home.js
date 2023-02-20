@@ -43,11 +43,6 @@ var animation = bodymovin.loadAnimation({
     autoplay: true, // Optional
     name: "Hello World", // Name for future reference. Optional.
 })
-// $('#ferrisWheel').hover(function () {
-//     animation.play();
-// }, function () {
-//     animation.pause();
-// });
 
 /* 啟動wow */
 $(function () {

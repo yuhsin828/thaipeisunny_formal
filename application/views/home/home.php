@@ -52,10 +52,10 @@
         </div>
         <div class="col-md-6 text-center text-lg-start">
           <div class="welcome_ctrl mb-2 mb-md-3">
-            <img class="img-fluid welcome_svg animate__animated animate__zoomInRight wow" src="/images/home/welcome.svg" alt="歡迎來到小泰陽華文樂園">
+            <img class="img-fluid welcome_svg animate__animated animate__zoomInLeft wow" src="/images/home/welcome.svg" alt="歡迎來到小泰陽華文樂園">
           </div>
           <div class="slogan_ctrl">
-            <img class="img-fluid slogan_svg animate__animated animate__bounceInRight wow" data-wow-delay="1s" src="/images/home/slogan.svg" alt="一起暢遊華文吧！">
+            <img class="img-fluid slogan_svg animate__animated animate__zoomInRight wow" data-wow-delay="1s" src="/images/home/slogan.svg" alt="一起暢遊華文吧！">
           </div>
         </div>
       </div>
@@ -256,7 +256,7 @@
           <h5 class="fw-bolder">學生學習區</h5>
           <p class="lh-lg">這裡有注音符號、課文唸讀，以及課外學習等豐富的資源，陪伴你一同學習華文！</p>
           <div class="d-flex justify-content-center">
-            <a class="p-2 text-decoration-none section_btn text_light animate__animated animate__zoomInLeft wow" href="/student" role="button">去學習</a>
+            <a class="px-3 py-1 text-decoration-none section_btn text_light animate__animated animate__zoomInLeft wow" href="/student" role="button">去學習</a>
           </div>
         </div>
       </div>
@@ -269,7 +269,7 @@
           <h5 class="fw-bolder">教師交流區</h5>
           <p class="lh-lg">小泰陽與您分享我們整理的教學資源，以及教學經驗，一起為認真學習華文的孩子努力！</p>
           <div class="d-flex justify-content-center">
-            <a class="p-2 text-decoration-none section_btn text_light animate__animated animate__zoomInRight wow" href="/teacher" role="button">去交流</a>
+            <a class="px-3 py-1 text-decoration-none section_btn text_light animate__animated animate__zoomInRight wow" href="/teacher" role="button">去交流</a>
           </div>
         </div>
       </div>
@@ -282,7 +282,7 @@
           <h5 class="fw-bolder">好站推薦</h5>
           <p class="lh-lg">許多珍貴且實用的學習和教學網站都在這裡，讓認真好學的你能夠有更多元的資源！</p>
           <div class="d-flex justify-content-center">
-            <a class="p-2 text-decoration-none section_btn text_light animate__animated animate__zoomInLeft wow" href="/recommend" role="button">去認識</a>
+            <a class="px-3 py-1 text-decoration-none section_btn text_light animate__animated animate__zoomInLeft wow" href="/recommend" role="button">去認識</a>
           </div>
         </div>
       </div>
@@ -295,7 +295,7 @@
           <h5 class="fw-bolder">下載專區</h5>
           <p class="lh-lg">小泰陽將學習和教學的資源存放在雲端資料夾裡，歡迎您前往下載，隨時隨地都能使用！</p>
           <div class="d-flex justify-content-center">
-            <a class="p-2 text-decoration-none section_btn text_light animate__animated animate__zoomInRight wow" href="https://drive.google.com/drive/u/5/folders/1PZ2xdEBupc0j3_NFL2_Ch7p-gLDAUHYc" target="_blank" role="button">去下載</a>
+            <a class="px-3 py-1 text-decoration-none section_btn text_light animate__animated animate__zoomInRight wow" href="https://drive.google.com/drive/u/5/folders/1PZ2xdEBupc0j3_NFL2_Ch7p-gLDAUHYc" target="_blank" role="button">去下載</a>
           </div>
         </div>
       </div>
