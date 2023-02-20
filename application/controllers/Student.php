@@ -100,7 +100,7 @@ class Student extends CI_Controller
             $data['customs_audio'] = array("4_2_b1_4", "4_2_b2_4", "4_2_b3_4");
             //故事
             $data['story_title'] = "4_2_c_1.svg";
-            $data['story_youtube'] = "";
+            $data['story_youtube'] = "rxRREJgjq2o";
             $data['story_content'] = "4_2_c_3";
             $data['story_audio'] = "4_2_c_4";
             //遊戲
