@@ -86,7 +86,7 @@ class Student extends CI_Controller
             $data['game_scratch'] = "629840733";
             break;
 
-         case "2": //元宵
+         case "2": //元宵節
             //簡介
             $data['main'] = '元宵節';
             $data['main_title'] = '4_2_a_1.svg';
@@ -122,7 +122,7 @@ class Student extends CI_Controller
             $data['customs_audio'] = array("4_3_b1_4", "4_3_b2_4", "4_3_b3_4");
             //故事
             $data['story_title'] = "4_3_c_1.svg";
-            $data['story_youtube'] = "";
+            $data['story_youtube'] = "h-lVlvT1AjA";
             $data['story_content'] = "4_3_c_3";
             $data['story_audio'] = "4_3_c_4";
             //遊戲
@@ -130,7 +130,7 @@ class Student extends CI_Controller
             $data['game_scratch'] = "";
             break;
 
-         case "4": //端年節
+         case "4": //端午節
             //簡介
             $data['main'] = '端午節';
             $data['main_title'] = '4_4_a_1.svg';
@@ -144,7 +144,7 @@ class Student extends CI_Controller
             $data['customs_audio'] = array("4_4_b1_4", "4_4_b2_4", "4_4_b3_4", "4_4_b4_4");
             //故事
             $data['story_title'] = "4_4_c_1.svg";
-            $data['story_youtube'] = "";
+            $data['story_youtube'] = "beZ91h_dUpI";
             $data['story_content'] = "4_4_c_3";
             $data['story_audio'] = "4_4_c_4";
             //遊戲
